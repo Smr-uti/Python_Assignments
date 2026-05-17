@@ -1,0 +1,51 @@
+1. What is Python and why is it popular?
+:-- Python is a high-level, general purpose programming language designed for readability and productivity.
+Python used in Data Science,AI Machine Learning, Web Development, Automation, Cloud Computing, CyberSecurity. 
+Python is popular because Easiest language for beginners, Many career paths. 
+
+2. Who created Python and when was it first released?
+:-- Python is created by Guido Van Rossum and First released in February-1991.
+
+3. What are the main features of Python?
+:-- Main Features of Python:
+i]. Simple Syntax
+2]. Dynamic Typing
+3]. Robust Error
+4]. Multi-Paradigm Support
+5]. Cross Platform.
+
+4. What is the difference between Python 2 and Python 3?
+:-- In Python 2: we print string in python2 "Welcome"
+    In Python 3: we print string in python3 ("Welcome")
+
+    In Python 2: We print 5/2= Python gives Output 2
+    In Python 3: We print 5/2= Python gives perfect Output 2.5.
+
+
+5. What is dynamic typing in Python?
+:-- Variables automatically adapt to the datatype you assign. Dont need to declare the datatype it declares easily.
+
+6. What is the difference between static typing and dynamic typing?
+:-- Static Typing                         
+i]. Declare the datatype of that varibale at the time of initialization.
+ii]. Slower
+:-- Dynamic Typing
+i]. Dont need to declare the datatype of the variables.
+ii]. Faster
+
+7. Why is Python called a cross-platform language?
+:-- Because Write once, Runs anywhere. 
+This means that code written on one operating system (like Windows) can run on another (like macOS or Linux) without needing to change the actual code.
+
+8. What is CPython?
+:-- CPython is the default and most widely used implementation of the Python programming language. CPython is the interpreter. It is the actual software program that reads your Python code and executes it.
+
+9. What is the role of the Python Virtual Machine (PVM)?
+:-- Python Virtual Machine (PVM) is the engine that actually runs your code. It is the "runtime" part of the Python system that takes the translated instructions and executes them on your computer's hardware.
+
+10. What is the difference between machine code and bytecode?
+:-- Machine code:
+Machine code is the most basic, fundamental language of a computer. It is the "native tongue" of the computer's CPU (Central Processing Unit).
+
+ByteCode:
+Bytecode is an intermediate step. It is a set of instructions that is more advanced than machine code but simpler than the Python code you write.

@@ -1,0 +1,113 @@
+Q1. What is the difference between / and // in Python?
+:-- / operator- / divides the first number by the second number and always returns a 
+floating-point number (a decimal), even if the numbers divide evenly.
+
+// operator- The // operator divides the first number by the second number and rounds the result
+down to the nearest whole integer (towards minus infinity). It chops off the decimal part entirely.
+
+Q2. What is the modulus operator used for?
+:-- It is used to find the remainder of a division problem.
+
+Q3. What is the exponentiation operator in Python?
+:-- Double asterisk (**). It is used to raise a number (the base) to the power of another number (the exponent).
+
+Q4. What will be the output of 5 % 2?
+:-- a=5
+    b=2
+    c=5%2
+    print(c)   ## output- 1
+
+Q5. What will be the output 5**2?
+:-- x=5
+    y=2
+    z=c**2
+    print(z)   ## output- 1
+
+Q6. What is operator precedence?
+:-- Operator Precedance:
+From Highest to lowest priority
+i]   () ----- Parenthesis
+ii]  ** ----- exponentiation
+iii] *,/,//,% ----- Multiplication, Division, Floor Division, Modulus.
+iv] + - ----- Addition, Substraction
+
+Q7. Which has higher priority: * or + ?
+:-- Parenthesis have highest priority.
+result=(2+3)*4
+        2+3=5
+        5*4=20
+## output:20
+
+Q8. 8. What will be the output of:
+print(2 + 3 * 4)
+:-- output- 14
+
+Q9. What will be the output of:
+print((2 + 3) * 4)
+:-- output- 20
+
+Q10. What will be the output of:
+print(2 + 3 ** 2)
+:-- output- 11
+
+Q11. What is type conversion in Python?
+:-- Python can convert values from one type to another using built-in functions.
+int("42") -->42
+str(15)   -->"15"
+float(3)  -->3.0
+
+Q12. How do we convert a float into an integer?
+:-- Float to int-
+    x=int(3.8)
+    print(x)
+output- 3
+
+Q13. What will be the output of int(3.8)?
+:-- output- 3
+
+Q14. What will be the output of float("3.14")?
+:-- output- 3.14
+
+Q15. What will be the output of bool(0)?
+:-- output- False
+
+Q16. What will be the output of bool(1)?
+:-- output- True
+
+Q17. What will be the output of bool("")?
+:-- output- False
+
+Q18. What will be the output of bool("Hello")?
+:-- output- True
+
+Q19. Can we convert a string into a complex number?
+:-- Yes, we can convert a string into a boolean using the built-in bool() function.
+
+Q20. What is the output of complex(True)?
+:-- output- 1+0j
+
+Q21. If you write 1a = 10, what error will occur and why?
+:-- Syntax error. 
+Rule: A variable name must start with a letter (a-z, A-Z) or an underscore (_).
+    : A variable name cannot start with a number.
+
+Q22. Why is False = 10 invalid in Python?
+:-- 
+
+Q23. If a = 10 and later a = 3.14, what happens to the variable type?
+:-- a = 10: Python creates an integer object (10) in memory and makes the label a point to it. At this moment,
+ type(a) is <class 'int'>.
+
+a = 3.14: Python creates a new float object (3.14) in memory and shifts the label a to point to this new object instead. 
+At this moment, type(a) becomes <class 'float'>.
+
+Q24. Why does 10 / 5 return 2.0 instead of 2?
+:-- Python's rule is that the / operator always returns a floating-point number (float), even if the numbers divide perfectly.
+
+Q25. Why does int(3.9) return 3 and not 4?
+:-- The int() function returns 3 because it performs truncation, not rounding.
+When you pass a floating-point number to int(), Python simply chops off everything after the decimal point and keeps only the
+whole number. It does not care how close the decimal is to the next whole number.
+int(3.9) becomes 3
+int(3.1) becomes 3
+int(-3.9) becomes -3

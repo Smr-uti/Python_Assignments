@@ -1,0 +1,123 @@
+Q1. What is an identifier in Python?
+:-- Identifier is a name used to identify a variable function, class, module, or other object.
+
+Q2. What are the rules for creating identifiers in Python?
+:-- Rules for creating identifiers:
+i] Start with alphabet or underscore. like a=10, _b=10
+ii] Followed by letters, digits or underscores. 
+iii] Keywords cannot be used as identifiers.
+
+Q3. Can we use keywords as variable names? Why?
+:-- Keywords are reserved words that have a predefined, specific meaning to the Python interpreter.
+
+Q4. What is meant by Python being case sensitive?
+:-- Python distinguishes between uppercase and lowercase letters.
+
+Q5. What is the difference between A and a in Python?
+:-- 'A' (Uppercase) has the decimal value of 65.
+    'a' (Lowercase) has the decimal value of 97.
+
+Q6. What are Python keywords?
+:-- Keywords have special meaning and cannot be used as identifiers.
+
+Q7. Why can’t we use for, if, or class as variable names?
+:-- Because these are the keyowrd and we cannot used keywords as identifiers.
+
+Q8. What is the difference between True and "True"?
+:-- True (Boolean Type)-- This is a Keyword. Used for making decisions in code (conditions).
+"True"(String Type)-- This is just a String (text).Used to display text to a user or store words.
+
+Q9. What is the role of None in Python?
+:-- None is a special constant used to represent the absence of a value. 
+
+Q10. Name any 10 Python keywords.
+:-- Python Keywords:
+return, import, class, and, else, break, for, is, while, not.
+
+Q11. What are the basic data types in Python?
+:-- Basic datatypes are: int, float, complex, bool, string, bytes.
+
+Q12. What is the difference between int and float?
+:-- int- Whole numbers without decimals.
+float- Numbers with a decimal point
+
+Q13. What is a complex number in Python?
+:-- complex number is a built-in data type used to represent numbers that have both a real part and an imaginary part.
+
+Q14. Why does Python use j instead of i in complex numbers?
+:--  In physics and engineering, the letter $i$ is traditionally used to represent Electrical Current. So complex number they used j. 
+
+Q15. What are container data types in Python?
+:-- Container datatypes are: list, tuple, set, dict.
+
+Q16. What is the difference between list, tuple, set, and dict?
+:-- i]List: Use for a simple collection of items that you want to modify later.
+ii]Tuple: Use for data that should stay "locked" and never change.
+iii]Set: Use when you only care about unique items and want to remove duplicates.
+iv]Dictionary: Use when you need to map a Key to a Value.
+
+Q17. What is a boolean type?
+:-- It is a data type in python, it gives output in only two ways True or False.
+
+Q18. What are the possible values of a boolean variable?
+:-- True and False
+
+Q19. What is a string in Python?
+:-- String is immutable collection of unicode characters enclosed in quotes: ' ', " ", """ """.
+
+Q20. Why are Python strings called immutable?
+:-- In Python, the term immutable simply means "unchangeable." 
+When we say strings are immutable, it means that once a string object is created in the computer's memory, its contents cannot be modified in place.
+
+Q21. What is dynamic typing in Python?
+:-- Dynamic typing is a feature of Python where the type of a variable is determined at runtime, not in advance.
+
+Q22. Can the same variable hold different types of values in Python?
+:-- Yes, absolutely. In Python, the same variable can hold different types of values at different points in time during the execution of your program.
+
+Q23. What will happen in the below code?
+:-- a = 10
+a = "Hello"
+print(type(a))
+:-- a = 10: Python creates an integer object with the value 10 in memory and assigns the name a to point to it.
+a = "Hello": Python creates a new string object "Hello". It then moves the label a away from the integer 10 and points it toward the new string object.
+
+Q24. What is multiple assignment in Python?
+:-- Multiple assignment is a shorthand way to assign values to multiple variables in a single line of code.
+
+Q25. How can we assign the same value to multiple variables?
+:-- x=y=z=100
+
+Q26. What is the output of:
+
+a = b = c = 5
+print(a, b, c)
+:-- Output is- 5 5 5
+
+Q27. What is the difference between decimal, binary, octal, and hexadecimal numbers?
+:-- i]. decimal(base 10):
+prefix 10:10
+
+ii]. binary(base 2):
+prefix  ob1010
+
+iii]. octal(base 8):
+prefix 0012
+
+iv]. hexadecimal(base 16)
+prefix 0xA 
+
+Q28. How do we write a binary number in Python?
+:-- We write a binary number in Python, we use the prefix 0b or 0B before the sequence of 0s and 1s.
+
+Q29. What is the prefix for octal numbers in Python?
+:-- 0o is a prefix for octal numbers in python.
+
+Q30. What is the prefix for hexadecimal numbers in Python?
+:-- Prefi for hexadecimal numbers in python is 0x.
+
+Q31. What is the decimal value of 0b1010?
+:-- Decimal value of 0b1010: 10.
+
+Q32. What is the decimal value of 0xA?
+:--Decimal value of 0xA: 10.

@@ -1,0 +1,28 @@
+Q1. What is an identifier in Python?
+:-- Identifier is a name used to identify a variable function, class, module, or other object.
+
+Q2. What are the rules for creating identifiers in Python?
+:-- Rules for creating identifiers:
+i] Start with alphabet or underscore. like a=10, _b=10
+ii] Followed by letters, digits or underscores. 
+iii] Keywords cannot be used as identifiers.
+
+Q3. Can we use keywords as variable names? Why?
+:-- Keywords are reserved words that have a predefined, specific meaning to the Python interpreter.
+
+Q4. What is meant by Python being case sensitive?
+:-- Python distinguishes between uppercase and lowercase letters.
+
+Q5. What is the difference between A and a in Python?
+:-- 'A' (Uppercase) has the decimal value of 65.
+    'a' (Lowercase) has the decimal value of 97.
+
+Q6. What are Python keywords?
+:-- Keywords have special meaning and cannot be used as identifiers.
+
+Q7. Why can’t we use for, if, or class as variable names?
+:-- Because these are the keyowrd and we cannot used keywords as identifiers.
+
+Q8. What is the difference between True and "True"?
+:-- True (Boolean Type)-- This is a Keyword. Used for making decisions in code (conditions).
+"True"(String Type)-- This is just a String (text).Used to display text to a user or store words.
