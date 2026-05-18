@@ -1,0 +1,94 @@
+Q1.	What is a string in Python? What types of characters can a string contain?
+:-- String is a collection of unicode characters.
+Types of characters can a string contain:
+Alphabet, Numbers, Special CHaracters & Spaces.
+
+Q2.	What are the four ways to create a string in Python? Give an example of each.
+:-- Four ways to string in python:
+'__'          Single Inverted Comma ----- str1='Rahul'
+"__"          Double Inverted Comma ----- str2="Rajesh"
+
+'''__'''      Triple Inverted Comma ----- ''' I am Smruti
+                                         I am Fresher'''   ##for multiline use
+
+"""__"""      Triple Inverted Comma ----- """"I am Smruti  ##for multiline use
+                                         I am from Pune"""
+
+Q3. What is the difference between """...""" and \ (backslash) for multiline strings? How does the output differ?
+:-- """___""" -Multiline String data output
+\ backslash - Single line data output
+
+Q4. What is string indexing? How does Python’s positive indexing start and in which direction does it go?
+:-- Indexing allows accessing individual characters by position. Positive indexing starts at 0 and goes from left to right.
+
+Q5. What is negative indexing? What does index -1 always refer to in any string?
+:-- Negative indexing is a way to access elements from the end of a sequence. In any string (or sequence), the index -1 always 
+refers to the very last character.
+
+Q6. For s = "welcome to india", what is the output of s[-1], s[-5], and s[-16]?
+:-- s = "welcome to india"
+    print(s[-1])
+    print(s[-5])
+    print(s[-16])
+output- a
+        i 
+        w 
+
+Q7. What is string slicing? Write the general syntax with start, stop, and step.
+:-- Extracts substring (Part of string) accessing substring.
+Syntax- string[start:stop:step]
+
+Q8. In slicing, the stop index is exclusive — what does that mean? Give an example.
+:-- Python will slice the string up to that index, but it will not include the character at that specific index in the 
+final result.
+:- str1="Smruti"
+   str1[0:5]
+output- Smruti
+
+Q9. What is the output of "welcome to india"[0:7:2]? Explain why.
+:-- str2="welcome to india"
+    str2[0:7:2]
+output- wloe 
+[0:7:2]- 0 means starts from index
+7- means upto 7 index. means 0 to 6+1=7  welcome
+2- means skip characters and take every 2nd character.
+
+Q10. What happens when you use s[:] or s[::] on a string? What does it return?
+:-- s[:]- start 0 defaults and stop defaults to the length of string. Print first character and last character.
+s[::]- start defaults from zero, stop default end of string character, step default 1. so print as it is string.
+
+Q11. Can you change a single character of a string using indexing like s[0] = 'W'? Why or why not?
+:-- No, you cannot change a single character of a string using indexing. If you try to run s[0] = 'W', Python will crash
+and throw a TypeError: 'str' object does not support item assignment.
+Because String are immutable.
+
+Q12. What is the difference between s[11:16] and s[11:] for s = "welcome to india"?
+:-- Both output is same india. 
+s[11:16]- here we mentioned start index and end index of substring.
+s[11:]- here we mentioned start index and end index is blank. but python by default grab end index. so output is india.
+
+Q13. What does type("Hello") return? What class do all strings belong to in Python?
+:-- type("Hello") return str.
+All strings in Python belong to the str class.
+
+Q14. If s = "Python", what is s[1:-1]? Explain the result.
+:-- str6="Python"
+    str6[1:-1]
+output- 'ytho'
+Strart index- The start index is inclusive, 'y' is the very first character included in your result.
+Stop index- The stop index in Python is always exclusive, Python stops right before this character. 
+Therefore, 'n' is left out.
+
+Q15. What is an escape character? Give two real examples from the notebook (like \' and \).
+:-- Escape character is a special character used in programming to signal that the character following it should be treated 
+differently than usual. In Python, the backslash (\) is the escape character.
+i] \' - str7='let\'s play cricket'
+     print(str7)
+output- let's play cricket
+Single quote
+
+ii] \ - Moves any text after it to a brand-new line
+str8="Python \n Programming"
+print(str8)
+output- Python 
+         Programming
