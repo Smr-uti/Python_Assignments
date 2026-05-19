@@ -1,0 +1,105 @@
+Q1. What is the difference between string methods and string built-in functions? Give the syntax of each.
+:-- Strings methods are specific method only work on string object and String built-in fuctions are work on many data types 
+they are not part of the strings.
+
+Q2. What are the 5 common categories of string methods in Python? Name one method from each category.
+:-- 5 Common Categories of String Methods:
+i] Content String- isalpha(), isdigit()
+ii] Search & Replace- find(), replace()
+iii] Trim Whitespace Methods- lstrip(), rstrip()
+iv] Splitting- split(), partition()
+v] Case Conversion- lower(), upper()
+
+Q3. What does isalpha() return and what are the exact conditions for it to return True?
+:-- isalpha()- It checks if all characters are ulphabet. 
+True: If the string is non-empty and all characters in the string are alphabetic (letters).
+False: If the string is empty or contains at least one non-alphabetic character (such as numbers, spaces, or symbols).
+
+Q4. What is the difference between isdigit() and isalnum()? Give one example where their outputs differ.
+:-- i] isdigit()- The string contains only numeric characters (0-9).
+text="12345"	
+print(text.isalpha())
+output- True
+
+ii] isalnum()- The string contains only letters (A-Z, a-z) OR numbers (0-9).
+text2="Python12345"
+print(text2.isalnum())
+output- True
+
+Q5. Does islower() return False if the string contains digits or spaces? Explain with an example.
+:-- No, islower() does not return False just because a string contains digits or spaces.
+    text2 = "python 123"
+    print(text2.islower())
+output- True
+
+Q6. What is the return type of isalpha(), isdigit(), isalnum(), islower(), isupper(), startswith(), and endswith()?
+:-- This means they will always return either True or False.
+isalpha(), isdigit(), isalnum(), islower(), isupper(): These are validation methods. They evaluate the entire string 
+(or its characters) and return True if the condition is met, and False otherwise.
+
+startswith(), endswith(): These are check methods. They compare the beginning or end of a string against a specified 
+substring and return True if a match is found, and False otherwise.
+
+Q7. What does the find() method return when a substring is NOT found in the string?
+:-- find()- The find() method returns -1 when the specified substring is not found in the string.
+
+Q8. Is find() case-sensitive? What will "Hello".find("hello") return?
+:-- Yes, the find() method is case-sensitive.
+It will return -1.
+Because "Hello" contains an uppercase 'H' and your search query "hello" starts with a lowercase 'h', Python cannot find
+an exact match. Since the substring is not found, find() returns -1 as the indicator of failure.
+
+Q9. What is the return value of find() when the substring IS found?
+:-- When the substring is found, the find() method returns the lowest index (integer) where the substring begins within
+the string.
+
+Q10. What is the difference between len(), min(), and max() when applied to strings?
+:-- i] len()-
+Returns the total count of characters (including spaces/symbols).
+This function counts how many characters exist in the string.
+
+ii] min()- 
+Returns the character with the lowest Unicode value.
+Characters have numerical codes (A=65, a=97, etc.). min() returns the character that appears earliest in the character
+set.
+
+iii] max()-
+Returns the character with the highest Unicode value.
+This returns the character that appears latest in the character set.
+
+Q11. Can you call upper() or lower() on an already uppercase or lowercase string? What happens?
+:-- Yes, you can absolutely call upper() or lower() on a string that is already in that state.
+If you call .upper() on a string that is already uppercase, it returns the same string in uppercase.
+If you call .lower() on a string that is already lowercase, it returns the same string in lowercase.
+
+Q12. What will isupper() return for a string that contains digits along with uppercase letters, like "HELLO123"?
+:-- It returns True. It ignores the digits characters.
+
+Q13. What is the syntax of startswith() and endswith()? Can they accept a tuple of values?
+:-- This methods is to check if a string begins or ends with a specific sequence of characters.
+i] startswith()- Ex. str="hello world"
+                     print(str.startswith("hello"))  
+            output-  True
+ii] endswith()- Ex.  str2="Hello World"
+                     print(str2.endswith("wide"))
+            output- False
+Yes! Both methods can accept a tuple of strings.
+
+Q14. A student wrote print(isalpha(name)). What is wrong with this, and how do you fix it?
+:-- print(isaplha(name)) 
+    Means they take variable in method without declaration of that variable.
+    Answer:
+    name="Smruti"
+    print(isalpha(name))
+
+Q15. What is the difference between find() and index() in Python strings
+:-- i] find()-
+Returns the lowest index (int).
+If substring not found Returns -1.
+
+ii] index()- 
+Returns the lowest index (int).
+If substring not found raises a ValueError.
+
+
+
