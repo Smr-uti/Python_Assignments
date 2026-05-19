@@ -1,0 +1,25 @@
+Q1. What is a string in Python?
+:-- String is collection of unicode.
+
+Q2. Why are strings called immutable objects?
+:-- Once string is created, it cannot be modified Strings are immutable.
+
+Q3. What is the difference between indexing and slicing?
+:--i]Indexing-
+Indexing is used to access a single item from a sequence based on its position.
+ii]Slicing-
+Slicing is used to access a range of items from a sequence. Slicing converts strings substrings. 
+
+Q4. What is the difference between positive indexing and negative indexing?
+:-- Positive Indexing-
+Positive indexing starts from 0. and its starts from left to right.
+Negative Indexing-
+Negative indexing starts from -1. and its from right to left.
+
+Q5. What happens if we try to modify a string directly?
+:-- It shows the error - 'str' object does not support item assignment. string is immutable we cant modify it directly 
+
+Q6. What is string concatenation?
+:-- String concatenation means join two or multiple string. We use this + operator to combine two or more string.
+
+Q7. 

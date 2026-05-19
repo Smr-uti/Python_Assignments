@@ -1,0 +1,80 @@
+Q1. What is a string in Python?
+:-- String is collection of unicode.
+
+Q2. Why are strings called immutable objects?
+:-- Once string is created, it cannot be modified Strings are immutable.
+
+Q3. What is the difference between indexing and slicing?
+:--i]Indexing-
+Indexing is used to access a single item from a sequence based on its position.
+ii]Slicing-
+Slicing is used to access a range of items from a sequence. Slicing converts strings substrings. 
+
+Q4. What is the difference between positive indexing and negative indexing?
+:-- Positive Indexing-
+Positive indexing starts from 0. and its starts from left to right.
+Negative Indexing-
+Negative indexing starts from -1. and its from right to left.
+
+Q5. What happens if we try to modify a string directly?
+:-- It shows the error - 'str' object does not support item assignment. string is immutable we cant modify it directly 
+
+Q6. What is string concatenation?
+:-- String concatenation means join two or multiple string. We use this + operator to combine two or more string.
+
+Q7. Which operators are commonly used with strings in Python?
+:-- (+)- Concatenation-
+Joins two or more strings together.
+
+(*)- Repitition-
+Repeats a string a specified number of times.
+
+(in)- Membership- 
+Returns True if a substring exists within a string.
+
+(not in)- Non-membership-
+Returns True if a substring does not exist.
+
+Q8. What is the purpose of the repetition operator in strings?
+:-- '*' operator repeat string multiple times.
+
+Q9. What is the use of membership operators in strings?
+:-- Membership operator (in , not in) used in string to find out the characters are present in the string or not.
+
+Q10. What is the difference between `in` and `not in` operators?
+:-- i] 'in' membership:
+Check the value is present in sequence.
+ii] 'not in' non-membership:
+Check the value is NOT present in the sequence.
+
+Q11. What does the `len()` function return for a string?
+:-- the len() function returns the total number of characters in a string. It treats the string as a sequence and counts 
+everything inside the quotes, including:
+Letters (a-z, A-Z)
+Digits (0-9)
+Symbols/Punctuation (@, #, !, etc.)
+Spaces (each empty space counts as one character)
+Escaped characters (like \n for a new line, which counts as one character)
+
+Q12. How do `min()` and `max()` work on strings?
+:-- i]'min()':
+It returns smallest character from the string.
+ii] 'max()':
+It returns the item with highest value.
+With Numbers: It finds largest numbers.
+With Strings: It finds the character that comes latest in alphabetical order (based on ASCII values).
+
+Q13. What is the use of the `ord()` function?
+:-- 'ord()':
+It returns unicode value of character. 
+
+
+Q14. What is the use of the `chr()` function?
+:-- 'chr()':
+It returns character from unicode values.
+
+Q15. How can you reverse a string in Python?
+:-- Using negative indexing we reverse a string in python.
+ text = "Python"
+    print(text[::-1])
+    output: nohtyP
