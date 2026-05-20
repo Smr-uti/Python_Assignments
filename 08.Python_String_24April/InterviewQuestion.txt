@@ -1,0 +1,142 @@
+Q1. What does the replace() method do in Python? How many arguments does it take?
+:-- The replace() method is a built-in string method used to return a copy of a string where occurrences of a specified substring are 
+replaced with another specified substring.
+The replace() method takes up to three arguments.
+
+Q2. What is the difference between lstrip(), rstrip(), and strip()? Give one example of each.
+:-- These three methods are used to remove whitespace (or specific characters) from the ends of a string.
+i] lstrip()- It removes leading left whitespaces.
+Ex. text1= "   Python Programming   "
+    print(text1.lstrip())
+output-Python Programming   .
+
+ii] rstrip()- It removes trailing/right side whitespace.
+Ex. text2="   Python Programming   "
+    print(text2.rstrip())
+output:   Python Programming.
+
+iii] strip()- It removes leading and trailing (left & right) whitespaces.
+Ex. text3="  Python Programming  "
+    print(text3.strip())
+Output: Python Programming.
+
+Q3. What does split() return? What is the default delimiter if none is provided?
+:-- The split() method returns a list of strings. It devides string based on delimiter.
+split() uses any whitespace as the default delimiter.
+
+Q4. What is the difference between capitalize() and title()? Give one example where their output is different.
+:-- Both capitalize() and title() are used to modify the casing of strings
+i] capitalize()-Converts the first character of the entire string to uppercase and makes all other characters lowercase.
+text4 = "hello WORLD"
+print(text4.capitalize())  
+Output: 'Hello world'
+
+ii] title(): Converts the first character of every word in the string to uppercase and makes all remaining characters lowercase.
+text5 = "hello WORLD"
+print(text5.title())  
+Output: 'Hello World'
+
+Q5. What does swapcase() do? What will "Hello World".swapcase() return?
+:-- The swapcase() method in Python returns a copy of the string where all uppercase characters are converted to lowercase and all 
+lowercase characters are converted to uppercase.
+Output: hELLO WORLD
+
+Q6. What is the difference between chr() and ord()? Give one example of each.
+:-- i] chr()- It returns character from unicoden values.
+Ex. char=chr(75)
+    print(char)
+Output: K
+
+ii] ord()- It returns the unicode value from character.
+Ex. unicode=ord("A")
+    print(unicode)
+Output: 65
+
+Q7. What does the str() built-in function do? Give one real-life example of when you would use it.
+:-- The str() built-in function is used to convert a specified value into a string.
+Ex. age=25
+    text ="Age is " + str(age)
+    print(text)
+Output : Your roll no is 22.
+
+Q8. What does join() do? Which object calls join() -- the list or the separator string?
+:-- It joins elements of iterable (list/tuple) into single string. It joins multiple string.
+Ex. words=["Hello", "Welcome" "to" "India"]
+    sentence=" ".join(words)
+    print(sentence)
+Output- Hello, Welcome to India
+
+Q9. What is the difference between split() and partition()?
+:-- i]split()- It devides string based on delimiter.
+split() gives a list of strings.
+
+ii]partition()- It devides a string into 3 parts.
+partition() gives a tuple of three strings.
+
+Q10. What does strip() remove from a string? Does it remove whitespace from the middle of a string?
+:-- strip() method removes leading and trailing (left & right) whitespaces.
+No. The strip() method does not affect the middle of the string. It only looks at the edges.
+
+Q11. What is the difference between lower() and upper()? Do they change the original string?
+:-- i]lower(): Converts all cased characters in a string to lowercase.
+ii]upper(): Converts all cased characters in a string to uppercase.
+No, they do not.
+In Python, strings are immutable, meaning they cannot be changed after they are created. When you call .lower() or .upper(), 
+Python does not modify the original string
+
+Q12. What is the difference between str(), int(), float(), and complex() in Python? Which category do they belong to -- methods
+or built-in functions?
+:-- These four are built-in functions.
+str(): Converts the value into a string (text). --->str(10)- '10'
+int(): Converts to an integer (whole number). ---> int(10.5)- 10
+float(): Converts to a floating-point (decimal number). ---> float(10)- 10.0
+complex(): Converts to a complex number (a + bj). ---> complex(2)- (2+0j)
+This are belongs from built in functions of python.
+
+Q13. What will int("25") return? What will float("25") return? What is the difference in output?
+:-- int("25") returns 25
+    float("25") returns 25.0
+Difference is "25" is in string format int() convert it into integer format and float() convert it into float format.
+
+Q14. Can you convert a float to int using int()? What happens to the decimal part -- does it round off or truncate?
+:-- Yes, you can convert a float to an integer using the int() function.
+When you use int() to convert a float, it truncates the value. This means it simply removes the decimal part and keeps only the
+whole number portion.
+print(int(3.9)) 
+Output: 3
+
+print(int(3.1))  
+Output: 3
+
+Q15. What does complex() do? Give one example of a complex number and how str() converts it.
+:-- The complex() function is a built-in function used to create or convert a value into a complex number.
+Ex. a = complex(5, 10)
+    print(str(a))
+Output: 5+10j
+
+Q16. What will str(10), str(10.5), and str(10+4j) return? What type will each result be?
+:-- str(10) ---> '10'
+    str(10.5) ---> '10.5'
+    str(10+4j) --->	'(10+4j)'
+The result of calling str() on any object is always the str (string) type.
+
+Q17. What does partition() return when the separator is NOT found in the string?
+:-- When the separator is not found in the string, the partition() method returns a tuple.
+If the seprator is NOT found in the string. 
+TypeError: str.partition() takes exactly one argument (0 given)
+
+Q18. What is the difference between replace() and split()? Can both be used to remove a word from a string?
+:-- i] replace()- To replace one substring with another.
+Output type is string.
+ii] split()- To break a string into a list of substrings.
+Output type is list of strings.
+
+Q19. What will "hello".upper().swapcase() return? Explain method chaining with this example.
+:--  returns 'hello'
+     "hello".upper() convert it into "HELLO".
+     "hello".swapcase() convert it into "HELLO".
+
+Q20. If chr(65) gives "A", what will chr(66), chr(67), and chr(90) give? What concept does this relate to?
+:-- chr(66) = B ,chr(67)= C ,chr(90)= Z
+It gives unicode value of that character from unicode table.
+This relates to the ASCII (American Standard Code for Information Interchange).
