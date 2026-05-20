@@ -1,0 +1,129 @@
+Q1. What is Console I/O in Python? What is the difference between input and output?
+:-- Console Input/Output allows programs to user interact with users.
+Console I/O (Input/Output) refers to the process of exchanging data between a computer program and the user via the 
+command-line interface or console.
+i] input()- input() functions takes input from the user and returns it as a string.
+We can also pass a string as an argument to the input() function which will be displayed as a prompt to the user.
+ii] output()- output() function display output to the console/screen.
+
+Q2. What does the print() function do? Write its full syntax including sep and end parameters.
+:-- It display output to the console/screen.
+Ex- #Using hyphen format
+     print("20", "05", "2026", sep="-")
+     Output: 20-05-2026
+
+    #Printing on the same line instead of moving to a new line
+     print("Hello", end=" ")
+     print("World!")
+     Output: Hello World!
+
+Q3. What is the default value of sep in print()? What will print("Hello", "World") output?
+:-- The default value of the sep parameter in the print() function is a single space character (' ').
+Ex- print("Hello", "World")
+Output: Hello World
+
+Q4. What does the end parameter in print() do? What is its default value?
+:-- end parameter does decide our string or data end with which character. 
+by default value is "\n" means next line goes to the new line for print instead of print on same line.
+
+Q5. What is the difference between print(name, height, weight) and print(name, height, weight, sep="-")?
+:-- Ex. print(name, height, weight)
+Output: name height weight
+Here ' ' using by default.
+
+Ex. print(name, height, weight, sep="-")
+Output: name-height-weight
+Here "-" using hyphen by default.
+
+Q6. What does the input() function do? What data type does it always return?
+:-- input() function takes input from the user & returns it as a string.
+input() function is used to take user input. When this function is called, the program pauses its execution and waits for the user to
+type something into the console and press Enter.
+No matter what the user types—whether it is a word, a sentence, a whole number, or a decimal—the input() function always returns that 
+value as a string (str) data type.
+
+Q7. A user enters 25 using input(). If you directly use it in a calculation, what problem will occur and how do you fix it?
+If user enter 25 as a input:
+Ex- user_input1=input("Enter the 1st number:") 
+    user_input2=input("Enter the 2nd number:") 
+     #user_input1= 25 and user_input2=25 as a input
+    print("Addition is :",user_input1+user_input2)
+Output: 2525
+
+How to fix it:
+Ex. user_input = int(input("Enter a number: ")) 
+    result = user_input + 5
+    print(result)  
+Output: 30
+
+Q8. What is the difference between print(10) and print("10")? Will the output look the same?
+:-- i] print(10)- It is return int type.
+ii] print("10")- It is return str type.
+It has same value but different datatypes.
+
+Q9. What does the type() function do? Give examples of what it returns for int, float, str, and bool.
+:-- type()- type() function returns datatype of that variable.
+i]Ex. print(10)
+      print(type(10))
+Output: <class 'int'>
+
+ii]Ex. print(10.5)
+       print(type(10.5))
+Output: <class 'float'>
+
+iii]Ex. print("Python")
+        print(type("Python"))
+Output: <class 'str'>
+
+iv] Ex. print(True)
+        print(type(True))
+Output: <class 'bool'>
+
+Q10. What does the id() function return? Will two variables with the same value always have the same id?
+:-- id() function returns a unique identifier for an object. This identifier is a whole number (an integer) that represents the exact 
+memory address. 
+No, not always. Whether they share the same ID depends entirely on the data type and how Python manages memory behind the scenes.
+
+Q11. What is the difference between input() with a prompt string and input() without one?
+:-- i] input() with a prompt string
+When you pass a string inside the parentheses, Python displays that text on the screen before pausing. This tells the user exactly what information the program is waiting for.
+
+Ex. # With a prompt string
+      name = input("Please enter your name: ") #Display custom message
+      print("Hello, " + name)
+Output: Hello, Smruti
+
+Ex. # Without a prompt string
+      name = input()
+      print("Hello, " + name) #Displays the black screen.
+Output: Hello, Smruti
+
+Q12. How would you take name, age, and height as input from a user and print them all in one line with a hyphen separator?
+:-- Ex-  # Taking inputs from the user
+           name = input("Enter your name: ")
+           age = int(input("Enter your age: "))       
+           height = float(input("Enter your height: ")) # Converted to float since height can have decimals
+         # Printing them in one line with a hyphen separator
+           print(name, age, height, sep="-")
+   Output: Smruti-30-5.4
+
+Q13. What will be the output of the following and why?
+val = input("Enter a number: ")
+print(type(val))
+:-- Output: <class 'str'>
+No matter what you type into the console—whether it's letters, a whole number (25), or a decimal (25.5)—the input() function always 
+grabs that data and wraps it as a string (str).
+
+Q14. What is the difference between print(name) and print("name")? When does each one get used?
+:-- i]print(name) — Printing a Variable
+When you do not use quotation marks, Python treats name as a variable.
+ii] print("name") - Printing a String
+When "name" used when we want to pass some message or just simple string.
+
+Q15. How is print() different from input()? Which one is used for output and which one is used for receiving data from the user?
+:-- i]print()- It display output to the console/screen.
+It is used for print output.
+
+ii]input()- It takes input from the user & returns it as a string. 
+It is used for receiving data from the user.
+
