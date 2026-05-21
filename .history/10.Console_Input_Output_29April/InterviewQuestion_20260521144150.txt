@@ -1,0 +1,21 @@
+Q1. What does the input() function always return, regardless of what the user types?
+:-- In Python, the input() function always returns a string (str), no matter what the user types.
+
+Q2. A student writes the following code expecting the output 30, but gets 1020. Why?
+a = input("Enter first number: ")
+b = input("Enter second number: ")
+print(a + b)
+:-- The issue here is that Python's input() function always treats whatever the user types as a string (text), even if they type numbers.
+So, when the student inputs 10 and 20:
+a becomes the string "10"
+b becomes the string "20"
+Tt performs string concatenation.
+"10" + "20" results in "1020".
+
+How to fix it
+To get the mathematical output of 30, you need to explicitly convert (or "cast") those strings into integers using the int() 
+function before adding them together:
+Ex-
+      a = int(input("Enter first number: "))
+      b = int(input("Enter second number: "))
+      print(a + b)

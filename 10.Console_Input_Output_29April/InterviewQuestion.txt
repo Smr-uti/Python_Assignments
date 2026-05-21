@@ -1,0 +1,93 @@
+Q1. What does the input() function always return, regardless of what the user types?
+:-- In Python, the input() function always returns a string (str), no matter what the user types.
+
+Q2. A student writes the following code expecting the output 30, but gets 1020. Why?
+a = input("Enter first number: ")
+b = input("Enter second number: ")
+print(a + b)
+:-- The issue here is that Python's input() function always treats whatever the user types as a string (text), even if they type numbers.
+So, when the student inputs 10 and 20:
+a becomes the string "10"
+b becomes the string "20"
+Tt performs string concatenation.
+"10" + "20" results in "1020".
+
+How to fix it:
+To get the mathematical output of 30, you need to explicitly convert (or "cast") those strings into integers using the int() 
+function before adding them together:
+Ex-
+      a = int(input("Enter first number: "))
+      b = int(input("Enter second number: "))
+      print(a + b)
+
+Q3. What are the two ways to fix the string addition problem when taking numeric input? Write both solutions.
+:--  Ex.- 
+i]   a = int(input("Enter first number: "))
+     b = int(input("Enter second number: "))
+     print(a + b)
+
+ii]  a = input("Enter first number: ")
+     b = input("Enter second number: ")
+     print(int(a) + int(b))  
+
+Q4. What is int() in Python -- is it a method or a built-in function? What types can it convert?
+:-- In Python, int() is a built-in function.
+It converts float(), str(), bool() into integer format.
+
+Q5. What is the difference between int(input()) and first taking input then converting using int()?
+:-- When we used int(input()) means we accept the data in integer and When we used int() after taking input means accept it in 
+string, and then convert it into integer.
+
+Q6. What does id() return in Python? What does the id number represent?
+:-- In Python, id() is a built-in function that returns a unique integer identifier for a specific object. Every single value in
+Python (numbers, strings, lists, functions, etc.) has its own unique id.
+The id() function returns the memory address.
+
+Q7. If you assign a variable num = 10 and then reassign num = 30, does the id change? What does this tell you about integers?
+:-- Yes, if we reassign num = 30 after num = 10, the id(num) will change. Because Integers are immutable.
+
+Q8. What does immutable mean in Python? Which data types are immutable?
+:-- In Python, immutable means cannot be modified after it is created.
+Immutable Datatypes: int, float, bool, str, byte, tuple, 
+
+Q9. What is the difference between mutable and immutable data types? Give one example of each.
+:-- i] Mutable: You can change, add, or remove elements of the object in-place without changing its memory address (id).
+ii] Immutable: You cannot change the contents of the object. Any operation that appears to "change" it actually creates a 
+brand-new object in memory, leaving the original unchanged.
+Ex. Immutable:(str)
+    text = "Hello"
+    text[0] = "h"  <-- This will raise a TypeError!
+# To "change" it, we must create a new string:
+    text = "h" + text[1:]
+
+Ex. Mutable:(list)
+    my_list = [1, 2, 3]
+    print(id(my_list))  
+    my_list[0] = 99     
+    print(my_list)      
+    print(id(my_list))
+
+Q10. When you modify a list element like list1[0] = 15, does the id of the list change? What does this tell you about lists?
+:-- No, when we modify a list element using list1[0] = 15, the id of the list does not change.
+
+Q11. What happens when you try to convert a float string like "10.5" directly using int()? Will it work?
+:-- No, it will not work. If w try to pass a string containing a decimal point directly into int(), Python will raise a ValueError.
+First, convert the string to a float & then convert that float to an int.
+
+Q12. What is the difference between float() and int() when converting user input?
+:-- int(): Produces an integer object (no decimal point).
+float(): Produces a floating-point object (a number with a decimal component, even if the value is a whole number like 10.0).
+
+Q13. Why is it important to convert input() to int() or float() before doing arithmetic operations?
+:-- Because, by default input() accept the value in string format which is not work for arihtmetic operations. It is important 
+to convert input to int() or float() because, in Python, the behavior of operators like +, -, *, and / changes completely 
+depending on the data type of the objects you are using.
+
+Q14. What will type(input()) always return no matter what the user types -- int, float, or str?
+:-- The user types, type(input()) will always return <class 'str'>.
+
+Q15. In memory, when num1 = 10 and then num1 = 10.1 is assigned, what happens to the old memory location storing 10?
+:-- When in memory num1 = 10 and then num1 = 10.1 is assigned, old memory location doesnt change. Old memory location and new one
+is different 
+
+
