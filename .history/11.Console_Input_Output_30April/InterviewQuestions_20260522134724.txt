@@ -1,0 +1,7 @@
+Q1. What are the three main ways to print formatted output in Python?
+:-- Three main ways to print formatted output:
+i] print("Python Programming", sep="-", end="\n")
+ii] course="Agentic AI"
+    language="Python"
+    print("Course Name: {}, Language: {}",format(course, language))
+iii]print(f"Course Name: {})

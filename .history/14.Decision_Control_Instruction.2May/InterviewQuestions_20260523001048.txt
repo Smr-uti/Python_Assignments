@@ -1,0 +1,123 @@
+Q1. What is decision control in Python? Why do we need it?
+:-- Decision Control refers to the ability of a program to make "decisions" based on certain conditions. It allows your program 
+to execute different blocks of code depending on whether a specific statement is true or false.
+Without decision control, a program would be a "straight line"—it would execute every line of code from top to bottom, in the 
+same order, every single time.
+
+Q2. What is the syntax of a simple if statement? What happens if the condition is False?
+:-- Syntax: If statement
+            if condition:
+               statement1
+               statement2
+It skips the indented block of code entirely and continues executing whatever comes after that block.
+
+Q3. What is the difference between if and if-else statement?
+:-- i] if statement:
+To run code only on a specific condition.
+If the condition is false it does nothing; skips the block.
+Provides one path for execution.
+
+ii] if-else statement:
+To choose between two different condition.
+Executes the else block.
+Provides two path for execution.
+
+Q4. What is the difference between if-else and if-elif-else?
+:-- i] if-else statement:
+Exactly two conditions.
+Only one condition checked.
+
+ii] if-elif statement:
+Three or more conditions.
+Multiple sequential conditions checked.
+
+Q5. How many elif blocks can you write in a single if-elif-else statement?
+:-- You can write as many elif blocks as you need in a single if-elif-else structure. There is no technical limit imposed by 
+Python. Whether you need to check 3 conditions or 300, Python will handle them sequentially.
+
+Q6. What is indentation in Python? What happens if you do not indent the code inside an if block?
+:-- Indentation tells the Python interpreter which lines of code belong together. When you write an if statement, the block 
+of code that is "inside" that condition must be indented to show that it is a dependency of that condition.
+If you fail to indent the code inside an if block, Python will raise an IndentationError and your program will refuse to run.
+
+Q7. What is the difference between the and operator and the or operator?
+:-- The and and or operators are logical operators used to combine multiple conditions.
+i]and operator: 
+The and operator returns True only if both conditions are True. If even one condition is False, the entire 
+result becomes False.
+
+ii]or operator:
+The or operator returns True if at least one of the conditions is True. It only returns False if both conditions are False.
+
+Q8. When does and return True? Give one example.
+:-- AND returns true when bothvalues are True.
+Ex:    age=int(input("Enter your age:"))
+       nationality=input("Enter your nationality:")
+       print(age)
+       print(nationality)
+
+       if (age>=18) and (nationality=="indian"):
+           print("Eligible for Voting")
+       else:
+           print("Not Eligible for Voting")
+Output: 40
+        American
+        Not Eligible for Voting
+
+Q9. When does or return True? Give one example.
+:-- OR returns True if at least one condition is True.
+Ex:   age=int(input("Enter your age:"))
+      nationality=input("Enter your nationality:")
+      print(age)
+      print(nationality)
+      if (age>=18) or (nationality=="indian"):
+         print("Eligible for Voting")
+      else:
+         print("Not Eligible for Voting")
+      print("Program Executed Successfully")
+
+Q10. What will be the output of the following and why?
+:-- x = 10
+    if x > 5:
+       print("Greater")
+    print("Done")
+Output: Greater
+        Done
+The if condition: The expression x > 5 evaluates to True since 10 > 5. Therefore, the code block immediately following the if 
+statement—which contains print("Greater")—is executed.
+
+Q11. What is the difference between = and == in Python? Which one is used in if conditions?
+:-- i]= :Assignment Operator	
+Used to assign a value to a variable.
+ii] == Comparison (Equality) Operator	
+Used to compare two values to see if they are equal.
+
+Q12. Can you write an if statement without an else block? Is else mandatory?
+:-- Yes, you can absolutely write an if statement without an else block.
+No, else is not mandatory. An if statement can exist entirely on its own.
+When to use only if: You use it when you only want to perform an action if a specific condition.
+
+Q13. What happens if none of the elif conditions are True and there is no else block?
+:-- If none of the if or elif conditions evaluate to True and there is no else block present, nothing happens.
+The entire conditional structure is simply skipped, and the program execution proceeds directly to the very next line of code 
+outside of that structure.
+
+Q14. Can you use and and or together in the same condition? Give one example.
+:-- Yes, you can absolutely use and and or together in the same condition.
+Ex:    age = 20
+       is_citizen = False
+       has_permission = True
+ 
+       if (age >= 18 and is_citizen) or has_permission:
+           print("You are Eligible for Voting")
+       else:
+           print("You are not Eligible for Voting")
+
+Q15. What will be the output and why?
+:--Ex:  num = 15
+        if (num > 10) and (num < 20):
+           print("Number is between 10 and 20")
+        else:
+           print("Number is out of range")
+Output: Number is between 10 and 20
+Because both conditions are True.

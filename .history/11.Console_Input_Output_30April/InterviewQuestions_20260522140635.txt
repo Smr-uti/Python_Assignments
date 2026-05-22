@@ -1,0 +1,28 @@
+Q1. What are the three main ways to print formatted output in Python?
+:-- Three main ways to print formatted output:
+i] print("Python Programming", sep="-", end="\n")
+ii] course="Agentic AI"
+    language="Python"
+    print("Course Name: {}, Language: {}",format(course, language))
+iii]print(f"Course Name: {course}, Language: {language})
+
+Q2. What is string concatenation? What operator is used for it?
+:-- String concatenation is the process of joining two or more strings together to create a new, single string.
+'+' operator is used for string concatenation.
+
+Q3. Why do you need to convert an integer to str() before using string concatenation? What error occurs if you don't?
+:-- Because we cant concatenate string with integer, it joint only str datatyoe. So if we need to concatenation with int+str then we have to convert int to str.
+Error occurs TypeError: can only concatenate str(not "int") to str.
+
+Q4. What is the difference between the normal print method and string concatenation?
+:-- Normal print method gives output how we display it (the print() function), how we structure your data (concatenation).
+    name="Smruti"
+    surname="More"
+    print("Concat :"+"Name - "+name+"Surname- "+surname)
+    print("Normal :","Name - "+name,"Surname- ",surname)
+Output: Concat :Name - SmrutiSurname- More
+        Normal :Name - Smruti Surname- More
+
+Q5. What does {} represent inside the format() method?
+:-- Variables representinside the format() method.
+
