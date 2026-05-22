@@ -5,6 +5,6 @@ Welcome to my Python practise repository!This collection tracks my progresss as 
 ### 🎓 Learning Path: 
 Notes, Core Concepts, & Documentation.
 ### 💻 Daily Coding Practise:
-Solutions to daily logic-building challenges & exercises.
+Solutions to daily topicwise logic-building challenges & exercises.
 ### 🎯 Interview Prep: 
 A collection of top Python interview questions & topicwise logical coding questions I am solving.
