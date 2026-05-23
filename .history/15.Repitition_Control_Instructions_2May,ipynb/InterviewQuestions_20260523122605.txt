@@ -1,0 +1,46 @@
+Q1. What is a loop in Python? Why do we use loops?
+:-- In Python, a loop is a programming construct that allows you to execute a specific block of code repeatedly as long as 
+a certain condition is met or for every item in a sequence.
+There are two primary types of loops in Python:
+i] for loop: Used for iterating over a sequence (such as a list, tuple, dictionary, set, or string).
+ii] while loop: Used to execute a block of code as long as a specified condition remains True.
+Why do we use loops:
+We use loops to automate repetitive tasks, process large datasets efficiently, and keep code clean and maintainable by 
+avoiding the need to write the same logic over and over again.
+
+Q2. What is the difference between a while loop and a for loop?
+:--                For loop:                           |                   While Loop
+● Iterating over a known sequence (list, string, range). | ● Repeating code based on a boolean condition.
+● Stops automatically when the sequence is exhausted.    | ● Stops when the condition becomes False.
+● Controlled by the elements in the collection.          | ● Controlled by a condition that is checked at each step.
+● Rarely causes infinite loops.                          | ● Can easily cause infinite loops if the condition never becomes False.
+
+Q3. What is the syntax of a while loop? What happens if the condition never becomes False?
+:-- Syntax: while condition:
+                  statement1
+                  statement2
+if the condition is never becomes false while loop remains True forever, you create an infinite loop.
+
+Q4. What is an infinite loop? How can you avoid it in a while loop?
+:-- An infinite loop is a sequence of instructions in a computer program that loops endlessly, either because the 
+loop has no terminating condition, the condition is configured to never be met, or the body of the loop causes the condition to remain
+unchanged.
+To avoid we have to declare some false statement outside the while loop.
+
+Q5. What is the syntax of a for loop in Python?
+:-- Syntax of For loop:  for variable_name in sequence:
+                         statement
+
+Q6. Can a for loop iterate over a string? What does it print for each iteration?
+:-- Yes, a for loop can absolutely iterate over a string in Python. Because strings are considered sequences of characters, the loop
+treats them as an iterable collection.
+Ex   text = "Hello"
+     for ch in text:
+     print(ch)
+Output: H
+        e
+        l
+        l
+        o
+
+

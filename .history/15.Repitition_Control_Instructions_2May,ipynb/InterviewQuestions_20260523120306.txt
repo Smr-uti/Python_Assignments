@@ -1,0 +1,17 @@
+Q1. What is a loop in Python? Why do we use loops?
+:-- In Python, a loop is a programming construct that allows you to execute a specific block of code repeatedly as long as 
+a certain condition is met or for every item in a sequence.
+There are two primary types of loops in Python:
+i] for loop: Used for iterating over a sequence (such as a list, tuple, dictionary, set, or string).
+ii] while loop: Used to execute a block of code as long as a specified condition remains True.
+Why do we use loops:
+We use loops to automate repetitive tasks, process large datasets efficiently, and keep code clean and maintainable by 
+avoiding the need to write the same logic over and over again.
+
+Q2. What is the difference between a while loop and a for loop?
+:--                For loop:                           |                   While Loop
+● Iterating over a known sequence (list, string, range). | ● Repeating code based on a boolean condition.
+● Stops automatically when the sequence is exhausted.    | ● Stops when the condition becomes False.
+● Controlled by the elements in the collection.          | ● Controlled by a condition that is checked at each step.
+● Rarely causes infinite loops.                          | ● Can easily cause infinite loops if the condition never becomes False.
+

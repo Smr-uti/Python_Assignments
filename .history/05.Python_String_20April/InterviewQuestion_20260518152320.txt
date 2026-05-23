@@ -15,9 +15,8 @@ Q2.	What are the four ways to create a string in Python? Give an example of each
                                          I am from Pune"""
 
 Q3. What is the difference between """...""" and \ (backslash) for multiline strings? How does the output differ?
-:--             """___"""                 |             \ backslash
-● Multiline String data output            | ● Single line data output
-
+:-- """___""" -Multiline String data output
+\ backslash - Single line data output
 
 Q4. What is string indexing? How does Python’s positive indexing start and in which direction does it go?
 :-- Indexing allows accessing individual characters by position. Positive indexing starts at 0 and goes from left to right.

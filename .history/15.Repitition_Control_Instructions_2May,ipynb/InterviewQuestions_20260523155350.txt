@@ -1,0 +1,94 @@
+Q1. What is a loop in Python? Why do we use loops?
+:-- In Python, a loop is a programming construct that allows you to execute a specific block of code repeatedly as long as 
+a certain condition is met or for every item in a sequence.
+There are two primary types of loops in Python:
+i] for loop: Used for iterating over a sequence (such as a list, tuple, dictionary, set, or string).
+ii] while loop: Used to execute a block of code as long as a specified condition remains True.
+Why do we use loops:
+We use loops to automate repetitive tasks, process large datasets efficiently, and keep code clean and maintainable by 
+avoiding the need to write the same logic over and over again.
+
+Q2. What is the difference between a while loop and a for loop?
+:--                For loop:                           |                   While Loop
+● Iterating over a known sequence (list, string, range). | ● Repeating code based on a boolean condition.
+● Stops automatically when the sequence is exhausted.    | ● Stops when the condition becomes False.
+● Controlled by the elements in the collection.          | ● Controlled by a condition that is checked at each step.
+● Rarely causes infinite loops.                          | ● Can easily cause infinite loops if the condition never becomes False.
+
+Q3. What is the syntax of a while loop? What happens if the condition never becomes False?
+:-- Syntax: while condition:
+                  statement1
+                  statement2
+if the condition is never becomes false while loop remains True forever, you create an infinite loop.
+
+Q4. What is an infinite loop? How can you avoid it in a while loop?
+:-- An infinite loop is a sequence of instructions in a computer program that loops endlessly, either because the 
+loop has no terminating condition, the condition is configured to never be met, or the body of the loop causes the condition to remain
+unchanged.
+To avoid we have to declare some false statement outside the while loop.
+
+Q5. What is the syntax of a for loop in Python?
+:-- Syntax of For loop:  for variable_name in sequence:
+                         statement
+
+Q6. Can a for loop iterate over a string? What does it print for each iteration?
+:-- Yes, a for loop can absolutely iterate over a string in Python. Because strings are considered sequences of characters, the loop
+treats them as an iterable collection.
+Ex   text = "Hello"
+     for ch in text:
+     print(ch)
+Output: H
+        e
+        l
+        l
+        o
+
+Q7. What is the range() function? Write its full syntax with start, stop, and step.
+:-- range() is a python bhilt-in function used to generate a sequence of numbers. Commonly used with for loop for specific number of 
+iteration.
+Syntax: range(start, stop, step)
+
+Q8. What does range(5) generate? What does range(1, 6) generate?
+:-- range(5) generate: 0 1 2 3 4
+range(1,6) generate: 1 2 3 4 5 
+
+Q9. What is the difference between range(10) and range(0, 10)?
+:-- range(10): 0 1 2 3 4 5 6 7 8 9 
+range(0,10): 0 1 2 3 4 5 6 7 8 9
+There is no functional difference between range(10) and range(0, 10).
+
+Q10. What does the step parameter in range() do? What will range(0, 10, 2) generate?
+:--  step() paramter in range used to skip the numbers.
+range(0,10,2): (0,2,4,6,8)
+
+Q11. What does the break statement do in a loop? When is it used?
+:-- break statement is used to exit from while or for loop. When break statement is encountered, the loop terminated immediately.
+The break statement is used when you need to exit a loop early because a specific condition has been met.
+
+Q12. What does the continue statement do in a loop? How is it different from break?
+:-- Continue statement is used to skip the current iteration & start the next iteration. When continue is encountered, remaining 
+statements in current iteration are not executed.
+                    break                              |                        continue
+● Terminates the loop entirely.                        |● Skips the current iteration only.
+● Jumps to the code after the loop.                    |● Jumps to the start of the next loop iteration. 
+● Used to stop when a goal is met or an error occurs.  |● Used to bypass specific items or skip unwanted logic.
+
+Q13. What will happen to the rest of the loop iterations when break is encountered?
+:-- When a break statement is encountered, all remaining iterations of the loop are immediately cancelled.
+The loop does not perform any more checks, and it does not execute any code that remains within the loop's block for the current iteration
+or any future ones.
+
+Q14. What will happen when continue is encountered -- does it stop the loop or skip only that iteration?
+:-- When a continue statement is encountered, it only skips the current iteration of the loop; it does not stop the loop entirely.
+
+Q15. What is the difference between while loop and for loop -- when would you prefer one over the other?
+:--                  For loop:                           |                   While Loop
+● Iterating over a known sequence (list, string, range). | ● Repeating code based on a boolean condition.
+● Stops automatically when the sequence is exhausted.    | ● Stops when the condition becomes False.
+● Controlled by the elements in the collection.          | ● Controlled by a condition that is checked at each step.
+● Rarely causes infinite loops.                          | ● Can easily cause infinite loops if the condition never becomes False.
+
+Prefer a for loop when:
+You know the count: You need to perform an action a specific number of times (e.g., for i in range(10):).
+Prefer a while loop when:
+The end point is unknown: You need to keep looping until a specific event happens (e.g., waiting for a user to input "quit," waiting for a file to finish downloading, or waiting for a game status to change).                                
