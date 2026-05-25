@@ -120,19 +120,5 @@ accessed inside compute_pay()?
 :-- when hours is defined as a parameter of an outer function (payroll()) and is accessed inside a nested function
 compute_pay.
 compute_pay: Local Variable
-payroll(): Enclosing variable
-hours is a parameter of payroll(), the compute_pay() function has access to it through the Enclosing scope.
-
-Q18. Can globals() be called from inside a deeply nested inner function? Will it return the module-level globals or
-something else?
-:-- Yes, globals() can be called from inside a deeply nested inner function. It will always return the dictionary.
-
-Q19. What is the practical use of the enclosing scope? Give a real-world example where an inner function reading from
-enclosing scope is useful.
-:-- 
-
-Q20. Summarise the four LEGB namespaces in one sentence each, covering: what it contains, when it is created, and when
-it is destroyed.
-:-- 
-
+payroll(): Encl
 

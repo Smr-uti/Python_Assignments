@@ -131,8 +131,6 @@ Q19. What is the practical use of the enclosing scope? Give a real-world example
 enclosing scope is useful.
 :-- 
 
-Q20. Summarise the four LEGB namespaces in one sentence each, covering: what it contains, when it is created, and when
-it is destroyed.
-:-- 
+Q20. Summarise the four LEGB namespaces in one sentence each, covering: what it contains, when it is created, and when it is destroyed.
 
 
