@@ -1,0 +1,63 @@
+Q1. Write out the LEGB rule in full. What does each letter stand for? In what order does Python search each level?
+:-- L (Local): Inside the current function.
+E (Enclosing): In any outer functions (nested scopes).
+G (Global): At the top level of the script/module.
+B (Built-in): In Python’s pre-defined library of functions and keywords.
+
+Search order for each level:
+Local: Python first looks for the name in the current local scope
+Enclosing: If not found, it moves outward to the scope of any enclosing functions
+Global: If still not found, it checks the global scope
+Built-in: Finally, it searches the built-in scope, which contains all of Python's reserved keywords and standard functions.
+
+
+Q2. What is the enclosing (E) namespace? Give a clear example showing a variable in the enclosing scope.
+:-- Enclosing(E):
+The Enclosing (or nonlocal) scope is the scope of any outer function that contains a nested function. It comes into play when you 
+have a function defined inside another function; the inner function has access to the variables defined in the outer function's 
+local scope.
+
+Ex>: def outer_func():
+     message = "I am in the enclosing scope!"  # Enclosing scope variable
+    
+          def inner_func():
+          print(message)  # Accesses the variable from the enclosing scope
+    
+          inner_func()
+    outer_func()
+Output: I am in the enclosing scope!
+
+Q3. What is the difference between the local namespace and the enclosing namespace?
+:--               Local Namespace                     |                Enclosing Namespace
+Variables defined inside the current function.        | Variable in the scope of any outer function.
+                                                      
+
+
+Q4. Can an inner function read a variable from the enclosing function without any keyword? Can it MODIFY that variable? What 
+keyword is needed to modify an enclosing variable?
+:-- Yes, an inner function can read a variable from its enclosing (outer) function without any special keywords.
+It cannot modify that variable directly. 
+To modify an immutable variable (or to reassign a variable name) from an enclosing scope, you must use the nonlocal keyword.
+
+Q5. What is the nonlocal keyword? How is it different from the global keyword?
+:-- The nonlocal keyword is used in nested functions to refer to a variable that is in the nearest enclosing scope. It does not 
+allow you to access variables in the global scope; it specifically looks for a variable in a enclosing function.
+The global keyword allows you to modify a variable that is defined at the top-level module scope.
+
+Q6. What is the built-in namespace? Give five examples of names that live in the built-in namespace.
+:-- built-in namespace in Python is a special namespace that contains the names of all the functions. 
+Five Functions of built-in namespace:
+len(), max(), min(), print(), int().
+
+Q7. In the payroll example (10.py), identify which LEGB level each of these belongs to inside compute_pay(): regular, 
+overtime_rate, base_wage, hours, min, max.
+:-- compute_pay:
+regular: Local Variable- Assigned within the body of compute_pay()
+overtime_rate: Enclosing Variable- Defined in payroll()
+base_wage: Global Variable- Defined at the top level of program
+hours: Enclosing- Defined as a parameter of payroll()
+min(): Built-in- Python Built-in functions
+max(): Built-in- Python Built-in functions
+
+Q8.  What happens when the same variable name exists at multiple LEGB levels? Which one does Python use?
+:-- 
