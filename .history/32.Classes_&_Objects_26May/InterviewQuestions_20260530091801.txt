@@ -1,0 +1,6 @@
+Q1. What is Object-Oriented Programming (OOP)? How is it different from Procedural Programming?
+:-- Object-Oriented Programming (OOP) is a programming paradigm based on the concept of "objects," which can contain data (attributes) 
+and code (methods). Instead of focusing on logic and functions, OOP focuses on the objects that developers want to manipulate.
+● We can create own custom datatype.
+
+Q2.  List all 6 principles of OOP.

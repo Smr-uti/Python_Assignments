@@ -1,0 +1,88 @@
+Q1. What is Object-Oriented Programming (OOP)? How is it different from Procedural Programming?
+:-- Object-Oriented Programming (OOP) is a programming paradigm based on the concept of "objects," which can contain data (attributes) 
+and code (methods). Instead of focusing on logic and functions, OOP focuses on the objects that developers want to manipulate.
+● We can create own custom datatype.
+
+Q2. List all 6 principles of OOP.
+:-- 1. Class & objects
+    2. Encapsulation
+    3. Polymorphism
+    4.Inheritance
+    5. Abstraction
+    6. Magic methods
+
+Q3. What is a class in Python? Define it in one sentence using the word "blueprint."
+:-- Class is a blueprint. Class is a set of rules that defines how its object will behave.
+
+Q4. What is an object in Python? What is another word for object?
+:-- Object is an instance of class. Once you have the class, you can create as many objects as you want, each with its own unique data.
+● Object is an entity that follows class rules.
+
+Q5. What is the syntax to define a class in Python? What keyword is used?
+:-- Synatx:    class class_name:
+                     def function_name():
+                     -----
+                     -----
+
+Q6.  What is the syntax to create an object from a class?
+:-- Syntax:    object_name = class_name()
+
+Q7. What is the difference between a class and an object? Use the Cars example from your notes.
+:--              Class                                 |                            Object
+              (Blueprint)                              |                     (Instance of class)
+1. Attributes + Methods Contains.                      |1. Follow rules of class
+2. Declared only once.                                 |2. Multiple objects can be created from one class.
+3. Does not consume memory when declared.              |3. Occupies memory when initialized.
+4. Exists as long as the program runs.                 |4. Created when needed and destroyed when no longer referenced.
+Ex.:   Cars                                            |Ex.:   Tata, Honda (Object of car class)
+       Mobile                                          |       Samsung, Nokia (Object of mobile class)
+
+Q8. What does a class contain? Name the two things.
+:-- Attributes & Methods in class contains.
+
+Q9.  What is the __init__ method? When is it called?
+:-- The __init__ method is a special instance method used as a constructor for a class. Its primary purpose is to initialize the 
+state of an object by assigning values to its attributes when the object is created.
+● The __init__ method is called automatically the moment a new instance (object) of a class is created. You do not need to call it
+manually; the Python interpreter handles this behind the scenes during the instantiation process.
+
+Q10. What is self in Python? Why is it needed as the first parameter in every method?
+:-- self as a nametag that every object in Python wears.     
+● When you call a method on an object—for example, my_car.display_info()—Python automatically translates this call behind the scenes 
+into: Car.display_info(my_car)
+
+Q11. What is an attribute? How do you define and access an instance attribute?
+:-- Attributes are the data or characteristics that describe an object created from that blueprint. 
+Ex. we have Vehicle class so colour, speed, mileage its the attributes.
+How to define attributes: self.colour = "White"
+                          self.speed = 80
+
+Q12. What is a method? How is it different from a regular function?
+:-- A method is essentially a function that is "attached" to a class. While a regular function lives on its own, a method belongs 
+to a class and is designed to interact with the data (attributes) of objects created from that class.
+
+Q13. Can you create multiple objects from the same class? Do they share the same attribute values?
+:-- Yes, you can create as many objects as you like from the same class. In fact, that is the primary purpose of a class—it acts 
+as a reusable template or factory for creating multiple instances.
+● No. While all objects created from the same class share the same structure (they have the same list of attributes defined in 
+the class), they store their own individual values for those attributes.
+
+Q14. In Python, "everything is an object." What does this mean? Give three examples using built-in types
+:-- "In Python, everything is an object," we mean that every single piece of data—even simple numbers or 
+functions—is an instance of a class.
+Ex:  1. nums = [10,20,30]  # nums is the object of list class.
+     2. name = "Smruti"   # name is the object of str class.
+     3. dict1 = dict()   # dict1 is the object of list class.
+
+Q15. What error occurs when you call a method on an object that does not have that method? For example: nums = [10,20,30]; nums.upper()
+:-- AttributeError occurs when we call method on an object that does not have that method. 
+Ex.: nums = [10,20,30]
+     nums.upper()
+So here nums is the object of list class. 
+Methods in the list is append(), pop(), insert(), sort(). 
+It does not have upper methods. 
+Upper method is belongs from str class.
+
+Q16. What is the difference between built-in types (int, str, list) and custom types (user-defined classes) in Python?
+:--                 Built-in types                            |
+1. Built-in Types (int, str, list, etc.)                                |

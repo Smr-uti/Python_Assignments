@@ -1,0 +1,25 @@
+Q1. What is Object-Oriented Programming (OOP)? How is it different from Procedural Programming?
+:-- Object-Oriented Programming (OOP) is a programming paradigm based on the concept of "objects," which can contain data (attributes) 
+and code (methods). Instead of focusing on logic and functions, OOP focuses on the objects that developers want to manipulate.
+● We can create own custom datatype.
+
+Q2. List all 6 principles of OOP.
+:-- 1. Class & objects
+    2. Encapsulation
+    3. Polymorphism
+    4.Inheritance
+    5. Abstraction
+    6. Magic methods
+
+Q3.  What is a class in Python? Define it in one sentence using the word "blueprint."
+:-- Class is a blueprint. Class is a set of rules that defines how its object will behave.
+
+Q4.  What is an object in Python? What is another word for object?
+:-- Object is an instance of class. Once you have the class, you can create as many objects as you want, each with its own unique data.
+● Object is an entity that follows class rules.
+
+Q5.  What is the syntax to define a class in Python? What keyword is used?
+:-- Synatx:    class class_name:
+                    def function_name():
+
+
