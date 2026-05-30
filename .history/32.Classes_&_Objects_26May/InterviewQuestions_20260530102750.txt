@@ -102,8 +102,8 @@ Syntax for change attribute value - object_name.attribute_name = new_value
 
 
 Q20. What is the relationship between a class and a custom data type in Python?
-:--                class                                      |                     custom datatype
-1. the blueprint that describes what kind of data the type    |1. Once you have defined the class, you can use it 
-holds (attributes) and what it can do (methods).              |just like a built-in type (like int or list).                                  
-                                                              
-                                                              
+:--                class 
+1. the blueprint that describes what kind of data the type    |
+holds (attributes) and what it can do (methods).              |                                   |
+                                                              |
+                                                              |
