@@ -97,8 +97,5 @@ Q18. What advantage does OOP have over Procedural Programming for large applicat
 :-- Half the code.
 
 Q19. How do you access an attribute of an object? How do you change its value after creation?
-:-- Syntax for Access Attribute -  object_name.attribute_name
-Syntax for change attribute value - object_name.attribute_name = new_value
-
-
+:-- Synat object_name.attribute_name
 

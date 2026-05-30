@@ -101,4 +101,3 @@ Q19. How do you access an attribute of an object? How do you change its value af
 Syntax for change attribute value - object_name.attribute_name = new_value
 
 
-
