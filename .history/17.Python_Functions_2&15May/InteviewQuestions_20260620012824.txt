@@ -1,0 +1,10 @@
+Q1. What is a function in Python? Write its definition in one line.
+:-- A Function is a block of code that performs a specific task that can be reused nultiple times throught a program.
+Syntax: def function_name():
+                 statement 1
+                 statement 2
+        function_name() --------> Function  Call
+
+ Q2. What are the two types of functions in Python? Give two examples of each.
+ :-- Two type of functions in python:
+ Built-in-Function & User-defines

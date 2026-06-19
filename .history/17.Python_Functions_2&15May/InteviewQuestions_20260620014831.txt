@@ -45,4 +45,3 @@ Words separated by underscores _
 Name should be descriptive — it should say what the function does
 Typically starts with a verb (since functions perform actions)
 No spaces, hyphens, or special characters
-

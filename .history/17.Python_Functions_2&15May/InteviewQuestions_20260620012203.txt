@@ -1,0 +1,2 @@
+Q1.  What is a function in Python? Write its definition in one line.
+:-- A Function is a block of code that performs a specific task that can be reused nultiple times throught a pr

@@ -33,16 +33,4 @@ Q6.  What is a function body? What is the role of indentation inside a function?
  does when called.
 
  Role of Indentation
-In Python, indentation is how Python knows which lines belong to the function body. There are no curly braces {} like in 
-other languages — the indent is the syntax.
-
-Q7.  What is the function naming convention in Python? Give one good example and one bad example.
-:-- =Python uses snake_case for function names. This is defined in PEP 8, Python's official style guide.
-The rules are:
-
-All lowercase letters
-Words separated by underscores _
-Name should be descriptive — it should say what the function does
-Typically starts with a verb (since functions perform actions)
-No spaces, hyphens, or special characters
-
+In Python, indentation is how Python knows which lines belong to the function body. There are no curly braces {} like in other languages — the indent is the syntax.

@@ -1,0 +1,1 @@
+Q1.  What is a function in Python? Write its definition in one line.
