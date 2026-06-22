@@ -50,10 +50,11 @@ Q8. Can you call a function multiple times? What is the advantage of doing that?
 :-- Yes, we call a function multiple times. 
 Advantages of Calling function:
 i] Code Reusability
-ii] Improve readability
-iii] Easier Maintenance
-iv] Modularity
-v] Testing and debugging
+Write the logic once, use it everywhere — no need to repeat the same code.
+ii] Easier Maintenance
+If the logic needs to change, update it in one place — all calls automatically get the fix.
+iii] Modularity
+Breaking a large, complex program into smaller, independent, manageable pieces called modules.
 
 Q9. What is code reusability? How do functions help achieve it?
 :-- Code Reusability means writing a code once and using it multiple times in the same or different programs — without 
@@ -89,67 +90,4 @@ for reusable code and why?
 :--                   print()                       |                   return
 1. print shows on screen.                           |1. return shows on screen Only if you print it
 2. print does not stored value                      |2. return stored value
-3. print is not for reusable                        |3. return is reusable
-
-Q15. Can a Python function return multiple values? How are they returned and how do you unpack them?
-:-- Yes! A Python function can return multiple values — using a comma ( , ) between values.
-Unpacking means taking each value into a separate variable from the tuple.
-Ex.:   def student():
-           return "Ganesh", 85, "A"
-
-       name, marks, grade = student()   # unpack
-       print(name)     # Ganesh
-       print(marks)    # 85
-       print(grade)    # A
-Output: Ganesh
-        85
-        A 
-
-Q16. What are positional arguments? What rule must you follow when passing them?
-:-- Positional arguments are values passed to a function in a specific order — the order in which parameters are defined.
-
-Rules follow when passing them:
-i] Arguments must be passed in the same order as parameters
-ii] Number of arguments must equal number of parameters
-iii] 1st argument → 1st parameter, 2nd → 2nd, and so on
-
-Q17. What are keyword arguments? What advantage do they have over positional arguments?
-:-- Keyword arguments are values passed to a function by specifying the parameter name along with the value.
-Advantages of Keyword arguments:
-i] Order does not matter
-ii] More readable code
-iii] Avoid mistakes
-
-Q18. Can you mix positional and keyword arguments in the same function call? What rule applies?
-:-- You can mix positional and keyword arguments in the same function call — but there is one important rule.
-But Positional arguments must always come BEFORE keyword arguments.
-
-Q19. What are default arguments? Where must default parameters be placed in the function signature?
-:-- Default arguments are values that are already set in the function definition — if no value is passed for that parameter,
-the default value is used automatically.
-Default parameters must always be placed AFTER non-default parameters.
-#  Correct — default after non-default
-def student(name, age, city="Pune"):
-    print(f"{name}, {age}, {city}")
-
-#  Wrong — default before non-default
-def student(name, city="Pune", age):   # SyntaxError!
-    print(f"{name}, {age}, {city}")
-
-Q20. What error occurs if you place a default parameter BEFORE a non-default parameter?
-:-- If a default parameter is placed before a non-default parameter, Python gives a SyntaxError.
-
-Q21. What is *args? What type does Python store the arguments in inside the function?
-:-- *args is a special parameter that allows a function to accept any number of positional arguments — you don't need to know
-in advance how many values will be passed.
-Python stores all *args values in a tuple.
-
-Q22. What is **kwargs? What type does Python store the keyword arguments in inside the function?
-:-- **kwargs is a special parameter that allows a function to accept any number of keyword arguments — you don't need to know 
-in advance how many key-value pairs will be passed.
-Python stores all **kwargs values in a dictionary.
-
-
-Q23. What is the difference between *args and **kwargs? When would you use each?
-:-- 
-
+3. we cannot use print for reusable                 

@@ -149,7 +149,3 @@ Q22. What is **kwargs? What type does Python store the keyword arguments in insi
 in advance how many key-value pairs will be passed.
 Python stores all **kwargs values in a dictionary.
 
-
-Q23. What is the difference between *args and **kwargs? When would you use each?
-:-- 
-

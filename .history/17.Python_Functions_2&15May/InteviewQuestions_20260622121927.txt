@@ -145,11 +145,5 @@ in advance how many values will be passed.
 Python stores all *args values in a tuple.
 
 Q22. What is **kwargs? What type does Python store the keyword arguments in inside the function?
-:-- **kwargs is a special parameter that allows a function to accept any number of keyword arguments — you don't need to know 
-in advance how many key-value pairs will be passed.
-Python stores all **kwargs values in a dictionary.
-
-
-Q23. What is the difference between *args and **kwargs? When would you use each?
-:-- 
+:--
 

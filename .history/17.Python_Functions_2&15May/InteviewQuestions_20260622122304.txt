@@ -151,5 +151,4 @@ Python stores all **kwargs values in a dictionary.
 
 
 Q23. What is the difference between *args and **kwargs? When would you use each?
-:-- 
 

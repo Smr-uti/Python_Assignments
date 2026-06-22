@@ -1,0 +1,83 @@
+Q1. What is a function in Python? Write its definition in one line.
+:-- A Function is a block of code that performs a specific task that can be reused nultiple times throught a program.
+Syntax: def function_name():
+                 statement 1
+                 statement 2
+        function_name() --------> Function  Call
+
+Q2. What are the two types of functions in Python? Give two examples of each.
+ :-- Two type of functions in python:
+i] Built-in Function: print(), input(), type(), id(), len()
+ii] User-defined Function: def Summation(), def Addition()
+
+Q3. What is the syntax of a user-defined function? What keyword is used to define it?
+:-- We define function with specific task.
+Syntax: def function_name():
+def keyword is used to define the function.
+
+Q4.  What are the advantages of using functions? Name all 5.
+:-- Advantages of using Function;
+i] Code reusability
+ii] Modularity
+iii] Improved readability
+iv] Ease of maintainance
+v] Testing & debugging
+
+Q5.  What is the difference between defining a function and calling a function?
+:--  Defining a function means writing the code that describes what the function does — it's a blueprint. The code inside 
+doesn't run yet.
+Calling a function means actually executing that code at a specific point in your program.
+
+Q6.  What is a function body? What is the role of indentation inside a function?
+:--  The function body is the block of code inside a function — all the statements that define what the function actually
+ does when called.
+
+ Role of Indentation
+In Python, indentation is how Python knows which lines belong to the function body. There are no curly braces {} like in 
+other languages — the indent is the syntax.
+
+Q7.  What is the function naming convention in Python? Give one good example and one bad example.
+:-- =Python uses snake_case for function names. This is defined in PEP 8, Python's official style guide.
+The rules are:
+
+All lowercase letters
+Words separated by underscores _
+Name should be descriptive — it should say what the function does
+Typically starts with a verb (since functions perform actions)
+No spaces, hyphens, or special characters
+
+Q8. Can you call a function multiple times? What is the advantage of doing that?
+:-- Yes, we call a function multiple times. 
+Advantages of Calling function:
+i] Code Reusability
+Write the logic once, use it everywhere — no need to repeat the same code.
+ii] Easier Maintenance
+If the logic needs to change, update it in one place — all calls automatically get the fix.
+iii] Modularity
+Breaking a large, complex program into smaller, independent, manageable pieces called modules.
+
+Q9. What is code reusability? How do functions help achieve it?
+:-- Code Reusability means writing a code once and using it multiple times in the same or different programs — without 
+rewriting it.
+Functions are the primary tool for code reusability in programming Define Once, Call Anywhere.
+
+Q10. What is modularity in programming? How do functions help in making code modular?
+:-- Modularity means breaking a large, complex program into smaller, independent, manageable pieces called modules.
+How do functions help in making code modular:
+1. Each Function = One Specific Task
+2. Main Program Becomes Clean & Readable
+3. Easy to Debug and Test
+4. Modules Can Be Reused in Other Programs
+5. Team-Friendly — Multiple People Can Work Together
+
+Q11. What will happen if you call a function before defining it in Python?
+:-- In Python, if you call a function before defining it, you will get a NameError.
+
+Q12. What is the difference between a parameter and an argument? Give an example of each.
+:--                  Parameter                      |                     Arguments
+1. Parameters are the variables listed inside the   |1. The actual value you pass to the function when you call it.
+bracket() when you define function.                 |
+2. Ex- def greet(name):                             |2. Ex- greet("Alice")
+   name is the parameter                            |   alice is the argument
+3. Parameter = Placeholder                          |3. Argument = Actual value
+

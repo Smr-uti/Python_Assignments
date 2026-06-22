@@ -135,21 +135,3 @@ def student(name, age, city="Pune"):
 #  Wrong — default before non-default
 def student(name, city="Pune", age):   # SyntaxError!
     print(f"{name}, {age}, {city}")
-
-Q20. What error occurs if you place a default parameter BEFORE a non-default parameter?
-:-- If a default parameter is placed before a non-default parameter, Python gives a SyntaxError.
-
-Q21. What is *args? What type does Python store the arguments in inside the function?
-:-- *args is a special parameter that allows a function to accept any number of positional arguments — you don't need to know
-in advance how many values will be passed.
-Python stores all *args values in a tuple.
-
-Q22. What is **kwargs? What type does Python store the keyword arguments in inside the function?
-:-- **kwargs is a special parameter that allows a function to accept any number of keyword arguments — you don't need to know 
-in advance how many key-value pairs will be passed.
-Python stores all **kwargs values in a dictionary.
-
-
-Q23. What is the difference between *args and **kwargs? When would you use each?
-:-- 
-
