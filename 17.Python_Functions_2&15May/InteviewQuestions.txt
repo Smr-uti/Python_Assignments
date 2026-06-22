@@ -70,7 +70,7 @@ How do functions help in making code modular:
 5. Team-Friendly — Multiple People Can Work Together
 
 Q11. What will happen if you call a function before defining it in Python?
-:-- In Python, if you call a function before defining it, you will get a NameError.
+:-- In Python, if we call a function before defining it, you will get a NameError.
 
 Q12. What is the difference between a parameter and an argument? Give an example of each.
 :--                  Parameter                      |                     Arguments
@@ -121,7 +121,7 @@ ii] More readable code
 iii] Avoid mistakes
 
 Q18. Can you mix positional and keyword arguments in the same function call? What rule applies?
-:-- You can mix positional and keyword arguments in the same function call — but there is one important rule.
+:-- We can mix positional and keyword arguments in the same function call — but there is one important rule.
 But Positional arguments must always come BEFORE keyword arguments.
 
 Q19. What are default arguments? Where must default parameters be placed in the function signature?
@@ -149,7 +149,52 @@ Q22. What is **kwargs? What type does Python store the keyword arguments in insi
 in advance how many key-value pairs will be passed.
 Python stores all **kwargs values in a dictionary.
 
-
 Q23. What is the difference between *args and **kwargs? When would you use each?
-:-- 
+:--         *args                              |                   **kwargs
+1. Type: Tuple                                 |1. Type: dictionary
+2. Values: Without names                       |2. Values: With names (key-value)
+3. Call syntax: func(1, 2, 3)                  |3. Call syntax: func(a=1, b=2)
+
+Use *args when you want to pass multiple values but don't know how many.
+Use **kwargs when you want to pass named details but don't know how many.
+
+Q24. Can you use *args and **kwargs together in the same function? What is the correct order of all parameter types?
+(regular, default, *args, **kwargs)
+:-- We can use *args and **kwargs together in the same function — but there is a strict order that must be followed.
+def func(regular, default=value, *args, **kwargs)
+              ↑          ↑          ↑        ↑
+            1st         2nd        3rd      4th
+
+Q25. When using *args, can you still access individual arguments by index? Demonstrate with an example.
+:-- Yes. *args is stored as a tuple, you can access individual arguments by index — just like a normal tuple.
+Ex- def show(*args):
+        print(args[0])    # first argument
+        print(args[1])    # second argument
+        print(args[2])    # third argument
+
+    show("Alice", 20, "Pune")
+Output- Alice
+        20
+        Pune
+
+Q26. When using **kwargs, how do you access individual values by key?
+:-- **kwargs is stored as a dictionary, we can access individual values by key — just like a normal dictionary.
+Ex-  def student(**kwargs):
+         print(kwargs['name'])    # access by key
+         print(kwargs['age'])     # access by key
+         print(kwargs['city'])    # access by key
+
+     student(name="Ganesh", age=20, city="Pune")
+Output- Ganesh
+        20
+        Pune
+
+Q27. What is a nested function? What is another name for it?
+:-- A nested function is a function that is defined inside another function.
+A nested function is also called an Inner Function.
+
+Q28. Can an inner function be called from outside its enclosing function? What error occurs if you try?
+:-- No, An inner function cannot be called from outside its enclosing function — it only exists inside the outer function.
+Error → NameError: name 'inner' is not defined
+
 
