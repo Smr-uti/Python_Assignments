@@ -197,4 +197,29 @@ Q28. Can an inner function be called from outside its enclosing function? What e
 :-- No, An inner function cannot be called from outside its enclosing function — it only exists inside the outer function.
 Error → NameError: name 'inner' is not defined
 
+Q29. What does the following code return?
+     def greet(name="rahul", age=25):
+         print("my name is", name)
+     result = greet("ganesh")
+     print(result)
+:-- Output- my name is ganesh
+            None
+
+Q30. What is the correct order of parameter types in a function definition? Give an example showing all four types together:
+regular, default, *args, **kwargs
+:-- def func(regular, default=value, *args, **kwargs)
+              ↑          ↑          ↑        ↑
+            1st         2nd        3rd      4th
+
+Ex: def profile(name, city="Pune", *args, **kwargs):
+        print(f"Name   : {name}")
+        print(f"City   : {city}")
+        print(f"Args   : {args}")
+        print(f"Kwargs : {kwargs}")
+
+    profile("Ganesh", "Mumbai", 1, 2, 3, grade="A", course="Python")
+Output- Name   : Ganesh
+        City   : Mumbai
+        Args   : (1, 2, 3)
+        Kwargs : {'grade': 'A', 'course': 'Python'}
 
