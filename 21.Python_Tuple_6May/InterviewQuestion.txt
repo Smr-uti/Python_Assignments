@@ -1,0 +1,143 @@
+I1. What is a tuple in Python? Define it in one sentence.
+:-- A Tuple is ordered, immutable, collection of elements created using round brackets().
+
+I2. Which brackets are used to create a tuple?
+:-- Round brackets () are used to create tuple.
+
+I3. What is the difference between a homogeneous tuple and a heterogeneous tuple? Give one example of each.
+:-- Homogeneous Tuple-
+Homogeneous tuple is a collection of elements that are all of the same data type.
+
+Heterogeneous Tuple- 
+Heterogeneous tuple is a collection of finite, ordered sequence of elements where each element can be of a different data type.
+
+I4. What does "ordered" mean for a tuple?
+:-- Ordered means that the elements in a tuple have a fixed position (index), and that order is always maintained.
+
+● Each element can be accessed by its index, starting from 0.
+● The order in which you insert elements is the order they stay — it never changes.
+
+I5. How do you access individual elements of a tuple? What is the starting index of a tuple?
+:- We access individual elements of tuple using indexing. 
+Zero(0) index of starting index of tuple.
+
+I6. What does "immutable" mean for a tuple?
+:-- We cannot add, remove, or replace elements after the tuple is created.
+
+7. What are the three operations you CANNOT perform on a tuple because it is immutable?
+:-- ● Add an element — append(), extend(), or insert() don't exist on tuples
+    ● Remove an element — remove(), pop(), or del t[i] won't work
+    ● Change/replace an element — you cannot reassign by index (t[0] = 99)
+
+I8. Why would you use a tuple instead of a list?
+:-- Tuple is immutable.
+ 
+I9. Does a tuple allow duplicate values? Give an example.
+:-- Yes, tuples do allow duplicate values. Immutability only means you can't change the tuple.
+Ex- 
+ tuple1 = (95, 85, 95, 70, 85, 95)
+print(tuple1)      # (95, 85, 95, 70, 85, 95)
+print(tuple1[0])   # 95
+print(tuple1[2])   # 95  ← same value, different index
+
+I10. How do you create an empty tuple in Python? What does type() return for an empty tuple?
+:-- Creating an empty tuple — there are two ways:
+t1 = ()          # most common
+t2 = tuple()  
+type of Empty tuple is tuple.
+
+I11. How do you create a tuple with only one element? What happens if you forget the trailing comma?
+:- We create a tuple with only one element using trailing comma. If we forget the trailing comma python consider this is int.
+Ex- tuple1 = (42,)
+    print(type(tuple1))
+Output - <class 'tuple'>
+
+Without trailing comma:-
+Ex- tuple2 = (42)
+    print(type(tuple2))
+Output - <class 'int'>
+
+I12. What is the output of type((25)) and type((25,))? Explain the difference.
+:-- type((25)) -----> Output: int
+    type((25,)) -----> Output: tuple
+
+type((25))- Python consider it is integer value.
+type((25,))- Python consider it is tuple. Because of trailing comma.
+
+I13. What is the difference between positive indexing and negative indexing in a tuple? Give an example for each using 
+tup1 = (10, 20, 30, 40, 50).
+:-- Positive indexing count starts from 0 and right to left.
+    tup1 = (10, 20, 30, 40, 50)
+            0   1   2   3   4
+
+    Negative indexing starts from -1 and right to left.
+    tup1 = (10, 20, 30, 40, 50)
+            -5  -4  -3  -2  -1
+
+I14. What does tup1[-1] return? What does tup1[0] return?
+:-- In tup1 = (10, 20, 30, 40, 50)
+    tup1[-1] = 50
+    tup1[0] = 10
+
+I15. What is slicing in a tuple? Write the syntax.
+:-- Slicing lets you extract a portion (sub-section) of a tuple by specifying a range of indices, returning a new tuple. 
+Group of element we can print in tuple.
+Syntax- tuple[start : stop : step]
+
+I16. What is the difference between tup1[2:] and tup1[:2]?
+:-- Ex- tup1 = (10, 20, 30, 40, 50)
+        tup1[2:]
+Output - (30, 40, 50)
+
+Ex- tup1 = (10, 20, 30, 40, 50)
+    tup1[:2]
+Output - (10, 20, 30)
+
+I17. How do you reverse a tuple using slicing? Write the slicing expression.
+:-- We can reverse a tuple using negative indexing.
+Ex- tup1 = (10, 20, 30, 40, 50)
+    tup1[::-1]
+Output - (10, 20, 30, 40, 50)
+
+I18. Name three ways to loop through a tuple in Python.
+:-- 1. for loop — directly access each element:
+    2. 2. for loop with range() and len() — loop using index numbers.
+    3. while loop — manually control the index:
+
+I19. When would you use enumerate() instead of a regular for loop on a tuple?
+:--  We Use enumerate() when we need both the index and the value at the same time.
+for loop print the values not their index.
+
+I20. What is the difference between a for loop and a while loop when iterating over a tuple?
+:-- Both loops can iterate over a tuple, but they differ in structure and use case:
+for loop — simple and automatic:
+● Python automatically moves to the next element
+● No index variable needed
+● Stops automatically at the end
+
+while loop — manual and controlled:
+● We manually manage the index (i)
+● We must increment i yourself — forgetting causes an infinite loop
+● Stops when the condition i < len(tup) becomes False
+
+I21. What is the output of type((10)) and why?
+:-- type((10))
+Output - int
+To create tuple we need a trailing comma. If there is no trailing comma python consider it is int.
+
+I22. Can a tuple contain another tuple inside it? Give an example.
+:-- Yes, tuple contain another tuple inside it. This is called nested tuple.
+
+Ex- tup1 = (10, 20, (30, 40, 50))
+    print(type(tup1))
+Output - <class 'tuple'>
+
+I23. What is the difference between a list and a tuple? Give at least three points.
+:--                    List                                 |                         Tuple
+1. List is mutable.                                         |1. Tuple is mutable.
+2. List created using square brackets.                      |2. Tuple created using round brackets.
+3. List is slower in performance.                           |3. Tuple is faster in performance.
+4. List uses more memory for resize.                        |4. Tuple is fixed so tuple uses less memory.
+                                
+                                
+
