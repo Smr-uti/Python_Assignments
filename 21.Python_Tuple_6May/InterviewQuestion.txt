@@ -139,5 +139,5 @@ I23. What is the difference between a list and a tuple? Give at least three poin
 3. List is slower in performance.                           |3. Tuple is faster in performance.
 4. List uses more memory for resize.                        |4. Tuple is fixed so tuple uses less memory.
                                 
-                                
+          
 
