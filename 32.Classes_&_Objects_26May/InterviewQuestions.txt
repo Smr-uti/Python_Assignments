@@ -7,7 +7,7 @@ Q2. List all 6 principles of OOP.
 :-- 1. Class & objects
     2. Encapsulation
     3. Polymorphism
-    4.Inheritance
+    4. Inheritance
     5. Abstraction
     6. Magic methods
 
@@ -15,7 +15,8 @@ Q3. What is a class in Python? Define it in one sentence using the word "bluepri
 :-- Class is a blueprint. Class is a set of rules that defines how its object will behave.
 
 Q4. What is an object in Python? What is another word for object?
-:-- Object is an instance of class. Once you have the class, you can create as many objects as you want, each with its own unique data.
+:-- Object is an instance of class. Once you have the class, you can create as many objects as you want, each with its own unique 
+data.
 ● Object is an entity that follows class rules.
 
 Q5. What is the syntax to define a class in Python? What keyword is used?
@@ -62,7 +63,7 @@ Q12. What is a method? How is it different from a regular function?
 to a class and is designed to interact with the data (attributes) of objects created from that class.
 
 Q13. Can you create multiple objects from the same class? Do they share the same attribute values?
-:-- Yes, wou can create as many objects as you like from the same class. In fact, that is the primary purpose of a class—it acts 
+:-- Yes, wou can create as many objects as we like from the same class. In fact, that is the primary purpose of a class—it acts 
 as a reusable template or factory for creating multiple instances.
 ● No. While all objects created from the same class share the same structure (they have the same list of attributes defined in 
 the class), they store their own individual values for those attributes.
@@ -105,5 +106,6 @@ Q20. What is the relationship between a class and a custom data type in Python?
 :--                class                                      |                     custom datatype
 1. the blueprint that describes what kind of data the type    |1. Once you have defined the class, you can use it 
 holds (attributes) and what it can do (methods).              |just like a built-in type (like int or list).                                  
+                                                              
                                                               
                                                               
