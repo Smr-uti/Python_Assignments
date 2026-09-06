@@ -1,0 +1,67 @@
+Q1. What is recursion in Python?
+Answer:- Recursion is a programming technique in which one function calls itself again & again & function call exists 
+	     in the function defination.
+
+Q2. What is a base condition (or base case) in a recursive function, and why is it necessary?
+Answer:- A base condition (or base case) is the condition that stops a recursive function from calling itself again.
+         It is necessary because without a base condition, the function will keep calling itself indefinitely and eventually 
+	     cause a RecursionError.
+
+Q3.	What happens if a recursive function doesn't have a base condition?
+Answer:- If a recursive function doesn't have a base condition, it will keep calling itself continuously.
+        Eventually, Python reaches its recursion limit and raises a RecursionError: maximum recursion depth exceeded.
+● Ex: def hello():
+          print("Hello")
+          hello()
+
+      hello() 
+
+Q4.	What is the difference between recursion and a loop (iteration)? Which one would you prefer and when?
+Answer:- 
+          | Recursion 🔄                                  | Loop 🔁                            |
+          | --------------------------------------------- | ---------------------------------- |
+          | A function calls itself                       | A loop repeats a block of code     |
+          | Uses a **base condition** to stop             | Uses a **loop condition** to stop  |
+          | Can use more memory because of function calls | Usually uses less memory           |
+          | Useful for tree, graph, nested structures     | Useful for simple repetitive tasks |
+          | Can be harder to understand                   | Usually easier to understand       |
+I would prefer a loop for simple repetitive tasks because it is generally simpler and more memory-efficient.
+
+I would prefer recursion when the problem is naturally recursive, such as: Nested structures & Some searching and divide
+
+Q5. What is a call stack, and how does it relate to recursion?
+Answer:- A call stack is a memory area that keeps track of function calls while a program is running.
+         In recursion, a function calls itself again and again. Each function call is stored in the call stack.
+
+Q6. What is RecursionError in Python, and when does it occur?
+Answer:- RecursionError occurs when a recursive function keeps calling itself too many times without stopping at a 
+         base condition.
+It occurs when 1. Base condition is missing, 2. Base condition is never reached 3.Recursive call keeps continuing
+
+Q7.	What is sys.setrecursionlimit() used for?
+Answewr:- sys.setrecursionlimit() is used to change the maximum recursion depth allowed by Python.
+
+Q8.	Can you write a factorial program using recursion? Explain how it works.
+Answer:- Yes, factorial can be calculated using recursion. The function calls itself with n-1 until the base case n == 1
+         is reached. Then the results are returned back and multiplied to get the final factorial.
+
+Q9.	What is the time complexity of a simple recursive function like factorial?
+Answer:- The time complexity of recursive factorial is O(n), and the space complexity is O(n) because of the recursive call 
+stack.
+
+Q10. What are some advantages and disadvantages of using recursion?
+Answer: 
+          Advantages                            |                   Disadvantages
+--------------------------------------------------------------------------------------------------------------                 
+i]Code shorter and simpler.                     |i]Uses more memory
+ii]Useful for complex problems	                |ii]Can cause RecursionError
+iii]Good for trees and nested data	            |iii]Can be slower than loops
+iv]Breaks problem into smaller problems	        |iv]Logic can be difficult to understand
+
+
+
+    Practical Tasks - recursion
+	1	Factorial — Write a recursive Python function to find the factorial of a given number.
+	2	Sum of natural numbers — Write a recursive function to calculate the sum of first n natural numbers (e.g., sum of 1 to 5 = 15).
+	3	Print numbers 1 to n — Write a recursive function that prints numbers from 1 to n.
+    

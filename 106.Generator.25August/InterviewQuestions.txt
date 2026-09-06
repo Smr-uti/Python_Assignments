@@ -1,0 +1,19 @@
+Interview Questions -generator
+	1	What is a generator in Python?
+	2	What is the yield keyword, and how is it different from return?
+	3	How do generators help in creating iterators easily?
+	4	What happens when you call a generator function? Does it start executing immediately?
+	5	What is StopIteration, and when does it occur?
+	6	What is the difference between a normal list and a generator in terms of memory usage?
+	7	What is a generator expression? How is it different from a list comprehension? (e.g., (i for i in range(10)) vs [i for i in range(10)])
+	8	What does the next() function do when used with a generator?
+	9	Can you use a generator more than once (i.e., iterate over it twice)? Why or why not?
+	10	Why are generators useful when working with large amounts of data?
+
+
+    
+Practical Tasks - generator
+	1	Basic generator — Write a generator function that yields the numbers 1, 2, and 3 one at a time, then print them using a for loop.
+	2	Squares generator — Write a generator function that yields the square of numbers from 1 to n.
+	3	Even numbers generator — Write a generator function that yields only the even numbers between a given start and end range.
+    

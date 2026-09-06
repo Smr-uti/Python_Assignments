@@ -1,0 +1,19 @@
+Interview Questions - decorator
+	1	What is a decorator in Python?
+	2	Why do we need decorators — what problem do they solve?
+	3	Are functions "first-class objects" in Python? What does that mean, and why does it matter for decorators?
+	4	What is the basic syntax for applying a decorator using @?
+	5	What does a decorator function typically return?
+	6	What is the difference between calling decor(printer) manually vs using @decor above a function definition?
+	7	Can you apply more than one decorator to a single function? What is the order of execution when you stack decorators (e.g., @decor2 on top of @decor1)?
+	8	What is a "closure" in Python, and how does it relate to how decorators work (the inner function remembering the outer function's variable)?
+	9	Can the same decorator be reused on multiple different functions? Why is that useful?
+	10	What is the difference between modifying a function directly and using a decorator to add functionality to it?
+
+
+
+
+Practical Tasks - decorator
+Greeting decorator — Write a decorator greet that prints "Hello!" before running any function, and apply it to a function that prints your name.
+Add welcome message — Write a decorator that takes a function, runs it, and then prints "Thank you for using this program" after it finishes 
+Simple math decorator — Write a decorator that takes a function returning a number and doubles the result before returning it (e.g., if the function returns 5, the decorator makes it return 10).

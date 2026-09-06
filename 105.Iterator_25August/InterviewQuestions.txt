@@ -1,0 +1,17 @@
+Interview Questions - Iterables & Iterators
+	1	What is an iterable in Python? Give some examples.
+	2	What is an iterator in Python? How is it different from an iterable?
+	3	What is the difference between iter() and next()?
+	4	Are all iterables iterators? Are all iterators iterables? Explain.
+	5	What happens when you call next() on an iterator after all its elements are exhausted?
+	6	How does a for loop work internally in Python (in terms of iter() and next())?
+	7	How can you check whether an object is iterable or an iterator?
+	8	Why is range() more memory-efficient than a list when looping over a large sequence of numbers?
+	9	Why does something like a = 2; for i in a: throw a TypeError?
+	10	What is the role of sys.getsizeof() in comparing memory usage between a list and a range/iterator?
+
+
+    Practical Tasks - Iterables & Iterators
+	1	Check iterable vs iterator — Take a list [1, 2, 3], print its type, then convert it to an iterator using iter() and print that type too.
+	2	Manual iteration — Create an iterator from a list and call next() on it three times to print each element one by one, then show what happens when you call next() a fourth time.
+	3	Memory comparison — Write two small programs: one using a list comprehension [x for x in range(1, 10001)] and another using range(1, 10001), and compare their memory size using sys.getsizeof().

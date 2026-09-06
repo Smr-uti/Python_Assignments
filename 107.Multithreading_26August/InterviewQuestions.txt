@@ -1,0 +1,60 @@
+Interview Questions - Multi-threading Set 1
+	1	What is a thread? What is the smallest unit of execution in a program called?
+	2	What is multitasking? What are the two types of multitasking (process-based vs thread-based)?
+	3	What is the "main thread" in a Python program?
+	4	What is the difference between single-threaded and multi-threaded execution?
+	5	How do you create a thread in Python? Which module is used?
+	6	What is the purpose of the start() method on a Thread object?
+	7	What is the purpose of the join() method? What happens if you don't call it?
+	8	How do you pass arguments to a function running in a thread (using args or kwargs)?
+	9	What are some real-world applications of multithreading (e.g., Android apps, desktop apps, web servers)?
+	10	Why is multithreading useful when working with a large number of records/tasks instead of processing them one by one?
+
+	1	What is a thread, and how is it different from a process?
+	2	What are the two ways to create a thread in Python?
+	3	What's the difference between calling start() and calling the thread's job method directly?
+	4	Why must you call super()._init_() when overriding the constructor in a Thread subclass?
+	5	What is the default name of the main thread, and what naming pattern do child threads get by default?
+	6	How do you set a custom name for a thread, and how do you read it back?
+	7	What is ident, and when does a thread actually get one assigned?
+	8	What is the difference between ident and native_id?
+	9	What is the difference between thread.ident and threading.get_ident()?
+	10	What does is_alive() tell you, and what would it return before a thread is started?
+	11	What does threading.enumerate() return, and does it include the main thread?
+	12	What does threading.active_count() return, and how does it relate to enumerate()?
+	13	What does join() do, and why is it needed before using a value computed by a thread?
+	14	What is the GIL, and is Python threading better suited to CPU-bound or I/O-bound tasks?
+	15	What is a race condition, and why can it happen with shared data across threads?
+
+Interview Questions - Multi-threading set3
+	1	What is the time module used for in the context of multithreading, and how do you calculate execution time of a piece of code?
+	2	What is a race condition? When does it occur?
+	3	Can you give a real-world style example of a race condition (like two people booking the same seat at once)?
+	4	How does using threads reduce total execution time compared to running functions sequentially (one after another)?
+	5	Why does calling join() matter when measuring total execution time of multiple threads?
+	6	What is a Lock in Python's threading module, and what problem does it solve?
+	7	What are acquire() and release() used for with a Lock object?
+	8	What happens if a thread calls acquire() on a Lock that is already held by another thread?
+	9	What happens if you call acquire() twice on the same Lock object within the same thread, without releasing it in between?
+	10	What is an RLock (Reentrant Lock), and how is it different from a regular Lock?
+	11	Why would a function that calls another function — where both need the same lock — cause a problem with a normal Lock but work fine with an RLock?
+	12	What is a Semaphore, and how is it different from a Lock?
+	13	If you create a Semaphore(3), how many threads can enter the critical section at the same time?
+	14	Give a practical scenario where a Semaphore would be more appropriate than a Lock.
+	15	What is a "critical section" in multithreading?
+
+Practical Tasks - Multi-threading Set 2
+	1	Print current thread info — Write a program that prints the name and identifier of the current (main) thread using threading.current_thread().
+	2	Create two simple threads — Write two small functions that each print a message, then run them using two separate Thread objects and start both.
+	3	Pass arguments to a thread — Write a function that takes a message and a count, and prints the message that many times. Run it in a thread, passing the arguments using args.
+
+    Simple Tasks - Multi-threading set2
+Task 1 — Basic thread with a result Create a Thread subclass that takes two numbers in its constructor, computes their sum in run(), and stores it in self.result. Start the thread, call join(), then print the result.
+Task 2 — Thread names and IDs Create two threads using target=, give them custom names, and print each thread's name, ident, and native_id. Also print the main thread's name and ID using threading.current_thread().
+Task 3 — Check thread status Start three threads that each sleep for a few seconds. Right after starting them, print threading.active_count() and loop through threading.enumerate() printing each thread's name. Then check is_alive() for each thread before and after they finish.
+
+
+Simple Tasks - Multi-threading set3
+Task 1 — Measure execution time with and without threads Write two functions that each simulate work using time.sleep(2). First, call them one after another normally and print total execution time using the time module. Then run the same two functions using threads (with join()) and print the total execution time again. Compare the two results.
+Task 2 — Fix a race condition using Lock Create a BankAccount class with a balance attribute and a withdraw(amount) method. Without any locking, create two threads that both try to withdraw money from the same account at the same time when the balance is insufficient for both. Observe the race condition. Then fix it by adding a Lock around the critical section inside withdraw().
+Task 3 — Limit concurrent access with Semaphore Simulate 5 threads trying to access a "resource" (e.g., print a message and sleep for 2 seconds), but only allow 2 threads to access it at the same time using a Semaphore(2). Print which thread enters and exits the critical section, and observe how threads wait for a slot to free up.
