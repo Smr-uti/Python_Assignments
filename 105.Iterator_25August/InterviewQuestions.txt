@@ -1,17 +1,59 @@
 Interview Questions - Iterables & Iterators
-	1	What is an iterable in Python? Give some examples.
-	2	What is an iterator in Python? How is it different from an iterable?
-	3	What is the difference between iter() and next()?
-	4	Are all iterables iterators? Are all iterators iterables? Explain.
-	5	What happens when you call next() on an iterator after all its elements are exhausted?
-	6	How does a for loop work internally in Python (in terms of iter() and next())?
-	7	How can you check whether an object is iterable or an iterator?
-	8	Why is range() more memory-efficient than a list when looping over a large sequence of numbers?
-	9	Why does something like a = 2; for i in a: throw a TypeError?
-	10	What is the role of sys.getsizeof() in comparing memory usage between a list and a range/iterator?
+	Q 1. What is an iterable in Python? Give some examples.
+	Answer- An iterable is an object whose elements can accessed one by one. It generates an iterator when passed to iter() 
+	method.
+	Ex.- numbers = [10, 20, 30]
+
+         for num in numbers:
+         print(num)
+
+	Q 2. What is an iterator in Python? How is it different from an iterable?
+	Answer- An iterator is an object that allows the programmer to traverse through a sequence of data without having to store 
+	the entire data in the memory.
+    An iterable is an object that can be iterated over, usually using a for loop. An iterator is an object that produces items 
+	one at a time using the next() function. We can create an iterator from an iterable using iter().
+
+	Q 3. What is the difference between iter() and next()?
+	Answer-
+	 | `iter()`                                    | `next()`                                  |
+     | ------------------------------------------- | ----------------------------------------- |
+     | Creates an **iterator** from an iterable.   | Gets the **next value** from an iterator. |
+     | Used to start iteration.                    | Used to continue iteration.               |
+     | Syntax: `iter(object)`                      | Syntax: `next(iterator)`                  |
+     | Usually called once to create the iterator. | Can be called multiple times.             |
+
+	Q 4. Are all iterables iterators? Are all iterators iterables? Explain.
+	Answer- No, all iterables are not iterators. However, all iterators are iterables. An iterable can be converted into an 
+	iterator using iter(), while an iterator supports next() to retrieve elements one by one.
+
+	Q 5. What happens when you call next() on an iterator after all its elements are exhausted?
+	Answer- When you call next() on an iterator after all its elements are exhausted, Python raises a StopIteration exception.
+
+	Q 6. How does a for loop work internally in Python (in terms of iter() and next())?
+	Answer- A for loop internally uses iter() and next().
+	Ex.- numbers = [10, 20, 30]
+
+        for num in numbers:
+        print(num)
 
 
-    Practical Tasks - Iterables & Iterators
-	1	Check iterable vs iterator — Take a list [1, 2, 3], print its type, then convert it to an iterator using iter() and print that type too.
-	2	Manual iteration — Create an iterator from a list and call next() on it three times to print each element one by one, then show what happens when you call next() a fourth time.
-	3	Memory comparison — Write two small programs: one using a list comprehension [x for x in range(1, 10001)] and another using range(1, 10001), and compare their memory size using sys.getsizeof().
+	Q 7. How can you check whether an object is iterable or an iterator?
+	Answer- You can check them using iter() and next(), or by checking the special methods.
+	Ex.- numbers = [10, 20, 30]
+
+         iter(numbers)
+
+
+	Q 8. Why is range() more memory-efficient than a list when looping over a large sequence of numbers?
+	Answer- range() is more memory-efficient because it represents a sequence using only start, stop, and step information
+	instead of storing all numbers in memory. The values are generated as needed during iteration.
+
+	Q 9. Why does something like a = 2; for i in a: throw a TypeError?
+	Answer- for loop requires an iterable. An integer like 2 is not iterable and cannot produce an iterator using iter(). 
+	Therefore, for i in a raises a TypeError.
+
+	Q 10. What is the role of sys.getsizeof() in comparing memory usage between a list and a range/iterator?
+	Answer- sys.getsizeof() is used to measure the memory size of a Python object in bytes. It can demonstrate that a list 
+	containing many elements generally consumes much more memory than a range object or an iterator. However, it measures 
+	the object's own memory footprint, not necessarily the complete memory used by all referenced objects.
+
