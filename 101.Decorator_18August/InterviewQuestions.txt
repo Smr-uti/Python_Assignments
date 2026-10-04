@@ -1,19 +1,65 @@
 Interview Questions - decorator
-	1	What is a decorator in Python?
-	2	Why do we need decorators — what problem do they solve?
-	3	Are functions "first-class objects" in Python? What does that mean, and why does it matter for decorators?
-	4	What is the basic syntax for applying a decorator using @?
-	5	What does a decorator function typically return?
-	6	What is the difference between calling decor(printer) manually vs using @decor above a function definition?
-	7	Can you apply more than one decorator to a single function? What is the order of execution when you stack decorators (e.g., @decor2 on top of @decor1)?
-	8	What is a "closure" in Python, and how does it relate to how decorators work (the inner function remembering the outer function's variable)?
-	9	Can the same decorator be reused on multiple different functions? Why is that useful?
-	10	What is the difference between modifying a function directly and using a decorator to add functionality to it?
+	Q 1. What is a decorator in Python?
+	Answer- Decorator function which takes other function as a input, add additional functionallities, and returns it.
+
+	Q 2. Why do we need decorators — what problem do they solve?
+	Answer- Python decorators are needed when you want to add extra behavior to an existing function without changing the function's original code.
+	1. Code duplication → write common logic once
+    2. Separation of concerns → keep extra logic separate from business logic
+    3. Reusability → use the same behavior on many functions
+    4. Maintainability → change the behavior in one place
+
+	Q 3. Are functions "first-class objects" in Python? What does that mean, and why does it matter for decorators?
+    Answer- Yes. Functions are first-class objects in Python. And this is one of the main reasons decorators are possible.
+	1. What does "first-class object" mean?
+
+    It means that a function can be treated like any other object/value in Python.
+    For example, you can:
+    Store a function in a variable
+    Pass a function as an argument
+    Return a function from another function
+    Store functions in a list/dictionary
+    This is what first-class means.
+
+    Q 4. What is the basic syntax for applying a decorator using @?
+	Answer- @decorator_name 
+	        def function_name():
+                # function code
+
+	@decorator_name → applies the decorator
+    function_name() → the original function
+    The decorator adds extra behavior to the function
 
 
+	Q 5. What does a decorator function typically return?
+	Answer- A decorator typically returns a wrapper function that adds extra behavior around the original function.
+
+	Q 6. What is the difference between calling decor(printer) manually vs using @decor above a function definition?
+	Answer- There is essentially no difference in the final behavior. @decor is a cleaner, shorter syntax for applying the decorator.
+
+	Q 7. Can you apply more than one decorator to a single function? What is the order of execution when you stack decorators 
+	(e.g., @decor2 on top of @decor1)?
+	Answer- Yes. You can apply multiple decorators to a single function. This is called decorator stacking.
+	Decorators are applied from bottom to top, but they execute from top to bottom when the function is called.
+
+	Q 8. What is a "closure" in Python, and how does it relate to how decorators work (the inner function remembering the outer 
+	function's variable)?
+	Answer- A closure is a function that remembers variables from its outer/enclosing function even after the outer function
+	has finished executing.
+    This is especially important for decorators because the inner wrapper() function needs to remember the original function 
+	passed to the decorator.
+
+	Q 9. Can the same decorator be reused on multiple different functions? Why is that useful?
+	Answer- Yes, the same decorator can be reused on multiple functions. It is useful because it allows us to apply common 
+	functionality such as logging, authentication, timing, or validation to many functions without repeating the same code.
+
+	Q 10. What is the difference between modifying a function directly and using a decorator to add functionality to it?
+	Answer- | Directly Modifying a Function                       | Using a Decorator                                   |
+    | --------------------------------------------------- | --------------------------------------------------- |
+    | We change the original function's code.             | We do not change the original function's code.      |
+    | Extra functionality is written inside the function. | Extra functionality is added through a wrapper.     |
+    | Code may be repeated for multiple functions.        | The same decorator can be reused on many functions. |
+    | Less reusable.                                      | Highly reusable.                                    |
+    | Maintenance can become difficult.                   | Easier to maintain and manage.                      |
 
 
-Practical Tasks - decorator
-Greeting decorator — Write a decorator greet that prints "Hello!" before running any function, and apply it to a function that prints your name.
-Add welcome message — Write a decorator that takes a function, runs it, and then prints "Thank you for using this program" after it finishes 
-Simple math decorator — Write a decorator that takes a function returning a number and doubles the result before returning it (e.g., if the function returns 5, the decorator makes it return 10).

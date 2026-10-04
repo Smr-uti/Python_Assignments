@@ -61,7 +61,7 @@ iv]Breaks problem into smaller problems	        |iv]Logic can be difficult to un
 
 
     Practical Tasks - recursion
-	1	Factorial — Write a recursive Python function to find the factorial of a given number.
+	
 	2	Sum of natural numbers — Write a recursive function to calculate the sum of first n natural numbers (e.g., sum of 1 to 5 = 15).
 	3	Print numbers 1 to n — Write a recursive function that prints numbers from 1 to n.
     
